@@ -1,0 +1,1163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>安安老师雷电将军在线-角色配装与阵容答疑</title>
+<meta name="description" content="安安老师雷电将军在线栏目，整理雷电将军天赋升级顺序、绝缘之旗印圣遗物词条、薙草之稻光与渔获取舍、雷九万班阵容循环、深渊12层实战记录与玩家问答。">
+<meta name="keywords" content="安安老师雷电将军在线">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23232033'/%3E%3Cpath d='M36 6 18 36h12l-4 22 20-32H34z' fill='%23d9b45a'/%3E%3Ccircle cx='32' cy='32' r='27' fill='none' stroke='%237c5fd0' stroke-width='2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1c1b22;
+  --ink-2:#3a3948;
+  --muted:#6b6978;
+  --line:#e2dfe8;
+  --bg:#f7f5fb;
+  --card:#ffffff;
+  --brand:#5b3fae;
+  --brand-2:#7c5fd0;
+  --accent:#c9962f;
+  --accent-soft:#f6ecd4;
+  --ok:#2f7d5d;
+  --warn:#a0442f;
+  --r-s:6px;
+  --r-m:12px;
+  --r-l:18px;
+  --sp-1:6px;
+  --sp-2:12px;
+  --sp-3:18px;
+  --sp-4:26px;
+  --sp-5:38px;
+  --sp-6:56px;
+  --shadow-1:0 1px 2px rgba(28,27,34,.06),0 4px 14px rgba(28,27,34,.05);
+  --shadow-2:0 2px 6px rgba(28,27,34,.08),0 12px 30px rgba(28,27,34,.08);
+  --font:system-ui,-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --sticky-offset:110px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-offset)}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.35;margin:0 0 var(--sp-2)}
+ul,ol{margin:0 0 var(--sp-2);padding-left:1.4em}
+p{margin:0 0 var(--sp-2)}
+button{font-family:inherit;font-size:inherit}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.sticky-shell{
+  position:sticky;top:0;z-index:60;
+  background:rgba(247,245,251,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.notice{
+  background:linear-gradient(90deg,#2b2740,#3d3468 60%,#5b3fae);
+  color:#eeeaf9;font-size:13.5px;
+}
+.notice .wrap{
+  display:flex;align-items:center;gap:10px;
+  padding:7px 18px;max-width:1180px;margin:0 auto;
+  overflow:hidden;
+}
+.notice .tag{
+  flex:0 0 auto;background:var(--accent);color:#241d05;
+  font-weight:700;border-radius:4px;padding:1px 7px;font-size:12px;letter-spacing:.5px;
+}
+.notice p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.notice a{color:#f4e2b4;text-decoration:underline;text-underline-offset:2px}
+.site-head{border-bottom:0;background:transparent}
+.head-wrap{
+  max-width:1180px;margin:0 auto;padding:10px 18px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--ink);flex:0 0 auto}
+.brand:hover{text-decoration:none}
+.brand svg{width:36px;height:36px;flex:0 0 auto}
+.brand span{letter-spacing:.3px}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:6px}
+.main-nav a{
+  color:var(--ink-2);font-size:14px;padding:6px 9px;border-radius:var(--r-s);
+}
+.main-nav a:hover{background:#ece8f6;text-decoration:none;color:var(--brand)}
+.head-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:190px;padding:7px 10px;border:1px solid var(--line);border-radius:var(--r-s);
+  background:#fff;font-size:14px;color:var(--ink);
+}
+.search-box input:focus{outline:2px solid var(--brand-2);outline-offset:1px}
+.btn{
+  display:inline-block;padding:8px 15px;border-radius:var(--r-s);border:1px solid transparent;
+  font-weight:600;font-size:14px;cursor:pointer;transition:transform .15s ease,background .15s ease;
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:#4b3298;color:#fff}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--ink-2)}
+.menu-btn{display:none}
+.search-feedback{
+  position:absolute;top:110%;left:0;right:0;background:#fff;border:1px solid var(--line);
+  border-radius:var(--r-s);box-shadow:var(--shadow-2);font-size:13.5px;padding:8px 10px;
+  color:var(--muted);display:none;z-index:70;
+}
+.search-feedback.show{display:block}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 85% -10%,rgba(124,95,208,.28),transparent 62%),
+    radial-gradient(700px 380px at 6% 110%,rgba(201,150,47,.18),transparent 65%),
+    linear-gradient(160deg,#221f33,#2e2947 55%,#3a3060);
+  color:#f2eefb;
+  border-bottom:1px solid #241f3a;
+}
+.hero-inner{
+  max-width:1180px;margin:0 auto;padding:56px 18px 48px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;
+}
+.hero .eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:1px;
+  color:#d8c8f5;border:1px solid rgba(216,200,245,.35);border-radius:999px;padding:3px 12px;margin-bottom:14px;
+}
+.hero h1{
+  font-size:clamp(28px,3.6vw,44px);margin:0 0 14px;letter-spacing:.5px;
+  color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.35);
+}
+.hero .lead{font-size:16px;color:#d9d3ea;max-width:34em;margin-bottom:22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.hero-actions .btn-primary{background:var(--accent);color:#241d05}
+.hero-actions .btn-primary:hover{background:#dfa93c;color:#241d05}
+.hero-actions .btn-ghost{background:transparent;border-color:rgba(242,238,251,.4);color:#efeadb}
+.hero-actions .btn-ghost:hover{background:rgba(255,255,255,.08)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:16px}
+.hero-stats div{font-size:13px;color:#bdb3d6}
+.hero-stats strong{display:block;font-size:22px;color:#f5d99a;font-weight:800;letter-spacing:.5px}
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:360px;height:auto;filter:drop-shadow(0 18px 34px rgba(0,0,0,.42))}
+.hero-note{
+  margin-top:14px;font-size:12.5px;color:#a99fc4;text-align:center;
+}
+
+/* ===== 通用布局 ===== */
+.wrap-max{max-width:1180px;margin:0 auto;padding:0 18px}
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:34px;
+  padding:var(--sp-5) 0 var(--sp-6);
+  align-items:start;
+}
+main{min-width:0}
+.side{position:relative}
+
+/* ===== 板块通用 ===== */
+.section{margin-bottom:var(--sp-6)}
+.section > h2{
+  font-size:22px;display:flex;align-items:center;gap:10px;margin-bottom:var(--sp-3);
+  padding-bottom:8px;border-bottom:2px solid var(--line);
+}
+.section > h2::before{
+  content:"";width:8px;height:22px;border-radius:3px;background:linear-gradient(180deg,var(--accent),var(--brand-2));flex:0 0 auto;
+}
+.section-intro{color:var(--muted);font-size:14.5px;margin:-6px 0 var(--sp-3)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);
+  box-shadow:var(--shadow-1);
+}
+.tag{
+  display:inline-block;font-size:12.5px;padding:2px 9px;border-radius:999px;
+  background:#efeaf9;color:#503a95;border:1px solid #ddd2f2;
+}
+.tag.gold{background:var(--accent-soft);color:#7a5716;border-color:#e7d4a4}
+.tag.green{background:#e6f3ec;color:var(--ok);border-color:#c7e3d3}
+.meta{font-size:13px;color:var(--muted)}
+
+/* 领域概览：非对称组合 */
+.overview-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:18px}
+.overview-main{padding:22px}
+.overview-main h3{font-size:18px;margin-bottom:10px}
+.overview-main p{font-size:14.8px;color:var(--ink-2)}
+.overview-facts{display:grid;grid-template-columns:1fr;gap:12px}
+.fact-card{padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.fact-card .num{font-size:20px;font-weight:800;color:var(--brand);line-height:1.2}
+.fact-card p{margin:0;font-size:13.5px;color:var(--ink-2)}
+
+/* 精选推荐：网格卡片 */
+.pick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.pick-card{overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.pick-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-2)}
+.pick-card img{width:100%;height:132px;object-fit:cover}
+.pick-body{padding:14px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pick-body h3{font-size:16px;margin:0}
+.pick-body p{font-size:13.6px;color:var(--ink-2);margin:0}
+.pick-body .meta{margin-top:auto}
+
+/* 最新更新：紧凑列表 */
+.updates{overflow:hidden}
+.update-item{
+  display:grid;grid-template-columns:88px 1fr;gap:14px;
+  padding:14px 18px;border-bottom:1px solid var(--line);
+}
+.update-item:last-child{border-bottom:0}
+.update-item time{font-size:13px;color:var(--brand);font-weight:600}
+.update-item h3{font-size:15.5px;margin:0 0 4px}
+.update-item p{margin:0;font-size:13.6px;color:var(--ink-2)}
+
+/* 分类入口：标签索引 */
+.index-tags{display:flex;flex-wrap:wrap;gap:10px}
+.index-tags a{
+  display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:var(--r-s);
+  background:#fff;border:1px solid var(--line);color:var(--ink-2);font-size:14px;font-weight:500;
+  transition:border-color .15s,color .15s,transform .15s;
+}
+.index-tags a:hover{border-color:var(--brand-2);color:var(--brand);transform:translateY(-2px);text-decoration:none}
+.index-tags a em{font-style:normal;font-size:12px;color:var(--muted)}
+
+/* 深度解析：分栏正文 + 引语 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:26px 28px;box-shadow:var(--shadow-1)}
+.deep h2{margin-bottom:6px}
+.deep .deep-dek{color:var(--muted);font-size:14px;margin-bottom:20px}
+.deep h3{font-size:17px;margin-top:var(--sp-4);margin-bottom:8px;color:#241f3a}
+.deep h3:first-of-type{margin-top:8px}
+.deep p{font-size:15px;color:var(--ink-2)}
+.deep .figures{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0 20px}
+.deep .figures div{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-s);padding:12px 14px}
+.deep .figures strong{display:block;font-size:19px;color:var(--brand)}
+.deep .figures span{font-size:12.5px;color:var(--muted)}
+.quote{
+  border-left:4px solid var(--accent);background:var(--accent-soft);
+  padding:14px 18px;border-radius:0 var(--r-s) var(--r-s) 0;margin:18px 0;color:#4a3a12;font-size:14.6px;
+}
+.quote cite{display:block;font-style:normal;font-size:12.5px;color:#7a5716;margin-top:6px}
+.check-list{list-style:none;padding:0;margin:12px 0 18px}
+.check-list li{position:relative;padding-left:26px;margin-bottom:9px;font-size:14.6px;color:var(--ink-2)}
+.check-list li::before{content:"▣";position:absolute;left:0;top:0;color:var(--brand-2);font-size:14px}
+.claim-table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14px}
+.claim-table th,.claim-table td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+.claim-table th{background:var(--bg);font-weight:700;color:var(--ink)}
+.claim-table td{color:var(--ink-2)}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:st}
+.steps li{
+  counter-increment:st;position:relative;padding:16px 18px 16px 62px;background:#fff;
+  border:1px solid var(--line);border-radius:var(--r-m);margin-bottom:12px;box-shadow:var(--shadow-1);
+}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);position:absolute;left:16px;top:16px;
+  width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;
+}
+.steps h3{font-size:16px;margin:0 0 4px}
+.steps p{margin:0;font-size:14px;color:var(--ink-2)}
+
+/* FAQ 折叠 */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--r-m);margin-bottom:10px;box-shadow:var(--shadow-1)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:14px 44px 14px 18px;font-weight:700;font-size:15.5px;position:relative;color:var(--ink);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--brand-2);font-weight:400;transition:transform .2s;
+}
+.faq details[open] summary::after{content:"−"}
+.faq summary:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:var(--r-m)}
+.faq .ans{padding:0 18px 16px;font-size:14.4px;color:var(--ink-2)}
+.faq .ans p{margin-bottom:8px}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.comment{padding:16px 18px;font-size:14.3px}
+.comment header{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--brand-2),var(--accent));color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex:0 0 auto}
+.comment .who{font-weight:700;font-size:13.8px}
+.comment .when{font-size:12px;color:var(--muted);margin-left:auto}
+.comment p{margin:0 0 6px;color:var(--ink-2)}
+.comment .ref{font-size:12.6px;color:var(--brand)}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.news-item{padding:16px 18px}
+.news-item h3{font-size:15.5px;margin-bottom:6px}
+.news-item p{font-size:13.6px;color:var(--ink-2);margin-bottom:8px}
+
+/* 榜单 / 可信度分层：对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;background:#fff}
+.compare > div{padding:18px 20px}
+.compare > div + div{border-left:1px solid var(--line);background:#fbfaff}
+.compare h3{font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.compare ul{margin:0;padding-left:1.2em;font-size:14.2px;color:var(--ink-2)}
+.compare li{margin-bottom:7px}
+.tier-list{display:grid;gap:10px;margin-top:14px}
+.tier{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r-m);padding:12px 16px}
+.tier b{font-size:14px;color:var(--brand);text-align:center;border-radius:var(--r-s);background:#efeaf9;padding:6px 0}
+.tier span{font-size:13.8px;color:var(--ink-2)}
+
+/* 相关推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rec-tags a{
+  font-size:13.6px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);
+  color:var(--ink-2);
+}
+.rec-tags a:hover{border-color:var(--brand-2);color:var(--brand);text-decoration:none}
+
+/* 侧栏 */
+.side-box{background:#fff;border:1px solid var(--line);border-radius:var(--r-m);padding:16px 18px;margin-bottom:18px;box-shadow:var(--shadow-1)}
+.side-box h2,.side-box h3{font-size:15.5px;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side-nav a{display:block;font-size:14px;color:var(--ink-2);padding:6px 8px;border-radius:var(--r-s);border-left:3px solid transparent}
+.side-nav a:hover{background:#f2eefb;text-decoration:none}
+.side-nav a.active{background:#efeaf9;color:var(--brand);font-weight:700;border-left-color:var(--brand)}
+.side-mini{font-size:13.6px;color:var(--ink-2);padding:9px 0;border-bottom:1px dashed var(--line)}
+.side-mini:last-child{border-bottom:0}
+.side-mini time{display:block;font-size:12px;color:var(--muted);margin-bottom:2px}
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank-list li{counter-increment:rk;display:flex;gap:10px;font-size:13.8px;padding:7px 0;border-bottom:1px dashed var(--line);color:var(--ink-2)}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{content:counter(rk);flex:0 0 20px;height:20px;border-radius:5px;background:#efeaf9;color:var(--brand);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:20px;bottom:22px;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:0;cursor:pointer;box-shadow:var(--shadow-2);
+  display:none;align-items:center;justify-content:center;font-size:18px;z-index:80;
+}
+.to-top.show{display:flex}
+.to-top:hover{background:#4b3298}
+
+/* 页尾 */
+.site-foot{background:#221f33;color:#c9c2dc;margin-top:20px;border-top:3px solid var(--accent)}
+.foot-wrap{max-width:1180px;margin:0 auto;padding:44px 18px 26px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;margin-bottom:30px}
+.foot-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;color:#fff;margin-bottom:10px}
+.foot-brand svg{width:32px;height:32px}
+.foot-pos{font-size:13.6px;color:#a79fd0;line-height:1.7;max-width:30em}
+.foot-col h3{font-size:14px;color:#f0ecfa;margin-bottom:10px}
+.foot-col a{display:block;color:#b8b1cf;font-size:13.6px;padding:3px 0}
+.foot-col a:hover{color:#f5d99a;text-decoration:none}
+.foot-bottom{border-top:1px solid #373252;padding-top:18px;font-size:12.8px;color:#8f88a8;display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between}
+.foot-bottom p{margin:0}
+
+/* 响应式 */
+@media (max-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:26px}
+  .side{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+  .side-box{margin-bottom:0}
+  .hero-inner{grid-template-columns:1fr;gap:24px;padding:44px 18px 38px}
+  .hero-art{order:-1}
+  .hero-art svg{max-width:250px}
+  .pick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .overview-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--sticky-offset:150px}
+  .head-wrap{padding:8px 14px;gap:8px}
+  .main-nav{
+    order:3;flex-basis:100%;display:none;flex-direction:column;gap:2px;
+    background:#fff;border:1px solid var(--line);border-radius:var(--r-m);padding:8px;box-shadow:var(--shadow-1);
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:9px 10px}
+  .head-right{margin-left:auto}
+  .menu-btn{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:var(--r-s);padding:7px 11px;font-size:14px;color:var(--ink-2);cursor:pointer}
+  .menu-btn:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+  .search-box input{width:130px}
+  .notice p{font-size:12.5px}
+  .deep{padding:20px 16px}
+  .deep .figures{grid-template-columns:1fr 1fr}
+  .pick-grid{grid-template-columns:1fr}
+  .comments{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .compare > div + div{border-left:0;border-top:1px solid var(--line)}
+  .side{grid-template-columns:1fr}
+  .update-item{grid-template-columns:1fr;gap:4px}
+  .foot-top{grid-template-columns:1fr}
+  .claim-table{display:block;overflow-x:auto}
+  .to-top{right:14px;bottom:16px;width:40px;height:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .pick-card:hover,.index-tags a:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-shell">
+  <div class="notice">
+    <div class="wrap">
+      <span class="tag">公告</span>
+      <p>11 月 7 日更新：深渊 12 层下半雷九万班循环录像、渔获精五与薙草之稻光实测对照已归档，<a href="/#depth">查看深度解析</a></p>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="head-wrap">
+      <a class="brand" href="/#top" aria-label="安安老师雷电将军在线首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#232033"/>
+          <circle cx="32" cy="32" r="26" fill="none" stroke="#7c5fd0" stroke-width="2"/>
+          <path d="M37 7 19 36h11l-4 21 20-31H36z" fill="#d9b45a"/>
+          <circle cx="32" cy="32" r="3.4" fill="#f2eefb"/>
+        </svg>
+        <span>安安老师雷电将军在线</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">角色概览</a>
+        <a href="/#picks">精选配装</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#depth">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">玩家评论</a>
+      </nav>
+      <div class="head-right">
+        <div class="search-box">
+          <input id="siteSearch" type="search" placeholder="搜索配装、阵容、词条" aria-label="站内搜索">
+          <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+        </div>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">雷电将军 · 配装与循环记录</span>
+      <h1>安安老师雷电将军在线</h1>
+      <p class="lead">围绕雷电将军的圣遗物词条、武器取舍与雷九万班循环，记录 2026 年 10 月至 11 月的实测数据、深渊 12 层录像与玩家问答。所有结论标注来源账号与日期，便于自行核对。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#depth">读深度解析</a>
+        <a class="btn btn-ghost" href="/#channels">按阵容找配装</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>46</strong>篇配装实测记录</div>
+        <div><strong>12</strong>组深渊通关录像</div>
+        <div><strong>318</strong>条玩家提问整理</div>
+      </div>
+    </div>
+    <div>
+      <div class="hero-art">
+        <svg viewBox="0 0 360 360" role="img" aria-label="雷电将军风格原创插画：紫色雷纹与金色饰环">
+          <defs>
+            <radialGradient id="g1" cx="50%" cy="42%" r="60%">
+              <stop offset="0%" stop-color="#8f74e0"/>
+              <stop offset="60%" stop-color="#4a3a86"/>
+              <stop offset="100%" stop-color="#241f3a"/>
+            </radialGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f5d99a"/>
+              <stop offset="100%" stop-color="#c9962f"/>
+            </linearGradient>
+          </defs>
+          <circle cx="180" cy="180" r="150" fill="url(#g1)"/>
+          <circle cx="180" cy="180" r="150" fill="none" stroke="#a48ce8" stroke-width="1.2" opacity=".7"/>
+          <circle cx="180" cy="180" r="122" fill="none" stroke="#c9b8f5" stroke-width="1" stroke-dasharray="4 9" opacity=".7"/>
+          <path d="M206 62 130 196h52l-18 100 86-136h-52z" fill="url(#g2)"/>
+          <path d="M206 62 130 196h52l-18 100 86-136h-52z" fill="none" stroke="#fff4d6" stroke-width="1.6" opacity=".8"/>
+          <g stroke="#d8c8f5" stroke-width="2" fill="none" opacity=".85">
+            <path d="M118 140c14 8 26 10 38 6"/>
+            <path d="M242 140c-14 8-26 10-38 6"/>
+            <path d="M118 226c14-8 26-10 38-6"/>
+            <path d="M242 226c-14-8-26-10-38-6"/>
+          </g>
+          <circle cx="180" cy="180" r="7" fill="#f2eefb"/>
+          <circle cx="180" cy="180" r="16" fill="none" stroke="#f5d99a" stroke-width="1.5" opacity=".9"/>
+        </svg>
+      </div>
+      <p class="hero-note">首屏插画为原创 SVG，不含外部素材</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap-max">
+  <div class="layout">
+    <main>
+
+      <!-- 1 领域概览 -->
+      <section class="section" id="overview">
+        <h2>角色概览：雷电将军在 2026 年末的定位</h2>
+        <p class="section-intro">先看清角色承担什么职能，再决定词条与队友，避免把主 C 配装方案套到副 C 位上。</p>
+        <div class="overview-grid">
+          <div class="card overview-main">
+            <h3>愿力机制与三种常见职责</h3>
+            <p>雷电将军的核心是元素爆发「奥义·梦想真说」：队友消耗元素能量时积攒愿力，愿力层数提高梦想一刀与后续居合斩的伤害。队伍里其他人放技能越频繁，她开大那一刀越重。由此产生三个职责分工：主 C 负责站场输出与回能，副 C 负责补伤害与触发超绽放，辅助向则只借元素战技「神变·恶曜开眼」的协同攻击挂雷与全队充能。</p>
+            <p>2026 年 9 月版本更新后，雷元素与草元素的超绽放反应没有调整，雷电将军在超绽放队里的定位稳定，但输出型配装更吃「元素充能效率」。截至 11 月 6 日，深渊 12 层上半雷抗怪占比约四成，纯雷伤队需要班尼特或九条裟罗增伤才能压住。</p>
+            <ul>
+              <li>主 C 向：绝缘之旗印四件套，充能沙、雷伤杯、暴击头</li>
+              <li>超绽放向：花海甘露之光或饰金之梦，精精精或充精精</li>
+              <li>辅助向：充能优先堆到 250% 以上，暴击属性可放弃</li>
+            </ul>
+          </div>
+          <div class="overview-facts">
+            <div class="card fact-card"><span class="num">90</span><p>满级满天赋时，梦想一刀十级的愿力伤害加成上限为 60%，来自 60 层愿力。</p></div>
+            <div class="card fact-card"><span class="num">250%</span><p>雷九万班循环中，雷电将军元素充能效率的常用阈值，低于此值容易出现断大。</p></div>
+            <div class="card fact-card"><span class="num">2.1s</span><p>元素战技协同攻击的触发间隔，超绽放队用它稳定挂雷，不追高倍率。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="section" id="picks">
+        <h2>精选内容推荐：值得先读的六份配装实测</h2>
+        <p class="section-intro">按可复现程度排序，优先收录带词条面板与战斗录像的条目。</p>
+        <div class="pick-grid">
+          <article class="card pick-card">
+            <img src="https://picsum.photos/seed/raiden-artifact/480/260" width="480" height="260" loading="lazy" alt="绝缘之旗印四件套面板截图示意">
+            <div class="pick-body">
+              <span class="tag gold">主 C 配装</span>
+              <h3>绝缘四件套充能沙的两种毕业线</h3>
+              <p>暴击率 68% / 暴伤 152% 与 60% / 178% 两套面板在 12 层下半的耗时差 6 秒，作者：米游社「稻妻的雨」。</p>
+              <span class="meta">10 月 28 日 · 阅读 2.4 万</span>
+            </div>
+          </article>
+          <article class="card pick-card">
+            <img src="https://picsum.photos/seed/raiden-weapon/480/260" width="480" height="260" loading="lazy" alt="薙草之稻光与渔获并列对比图">
+            <div class="pick-body">
+              <span class="tag">武器取舍</span>
+              <h3>薙草之稻光对渔获的实战优势区间</h3>
+              <p>精一薙草比精五渔获高约 11% 爆发伤害，但充能低于 240% 时优势收窄到 6% 以内。</p>
+              <span class="meta">10 月 31 日 · 阅读 1.9 万</span>
+            </div>
+          </article>
+          <article class="card pick-card">
+            <img src="https://picsum.photos/seed/raiden-team/480/260" width="480" height="260" loading="lazy" alt="雷九万班阵容站位与技能顺序示意">
+            <div class="pick-body">
+              <span class="tag green">阵容循环</span>
+              <h3>雷九万班 20 秒轴的技能先后顺序</h3>
+              <p>九条裟罗元素战技起手、枫原万叶扩散、班尼特开大、雷电将军收尾，附 12 层实录时间轴。</p>
+              <span class="meta">11 月 2 日 · 阅读 3.1 万</span>
+            </div>
+          </article>
+          <article class="card pick-card">
+            <img src="https://picsum.photos/seed/raiden-hyperbloom/480/260" width="480" height="260" loading="lazy" alt="超绽放队纳西妲与雷电将军组合面板">
+            <div class="pick-body">
+              <span class="tag">超绽放</span>
+              <h3>雷电将军超绽放队精通堆到多少停手</h3>
+              <p>纳西妲、行秋、久岐忍组合中，雷电将军元素精通 800 后收益下降，作者给出三段对照。</p>
+              <span class="meta">11 月 4 日 · 阅读 1.5 万</span>
+            </div>
+          </article>
+          <article class="card pick-card">
+            <img src="https://picsum.photos/seed/raiden-talent/480/260" width="480" height="260" loading="lazy" alt="天赋升级材料清单示意">
+            <div class="pick-body">
+              <span class="tag">养成规划</span>
+              <h3>天赋书与周本材料的优先级排序</h3>
+              <p>元素爆发优先升满，元素战技到 9 级即可，普通攻击可停在 1 级，省下约 6 本紫书。</p>
+              <span class="meta">10 月 26 日 · 阅读 2.2 万</span>
+            </div>
+          </article>
+          <article class="card pick-card">
+            <img src="https://picsum.photos/seed/raiden-abyss/480/260" width="480" height="260" loading="lazy" alt="深渊 12 层上下半通关成绩截图">
+            <div class="pick-body">
+              <span class="tag">深渊实录</span>
+              <h3>12 层上半雷抗环境的三套替代解法</h3>
+              <p>雷抗怪面前，玩家「望舒客栈老板」改用双雷双草，把通关时间从 95 秒压到 81 秒。</p>
+              <span class="meta">11 月 6 日 · 阅读 1.1 万</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="section" id="updates">
+        <h2>最新更新：本周新增记录</h2>
+        <p class="section-intro">按发布顺序排列，日期精确到天，附具体改动点。</p>
+        <div class="card updates">
+          <div class="update-item">
+            <time datetime="2026-11-08">11 月 8 日</time>
+            <div>
+              <h3>补入渔获精五在 240% 充能下的循环录像</h3>
+              <p>录屏编号 RB-1108-A，作者「绝缘四缺一」，时长 1 分 42 秒，展示雷九万班在 12 层下半的完整两轮轴。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <time datetime="2026-11-07">11 月 7 日</time>
+            <div>
+              <h3>更新深渊 12 层怪物抗性表</h3>
+              <p>圣骸兽与深渊使徒的雷元素抗性分别为 10% 与 30%，与 10 月 5 日版本数据一致，未见调整。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <time datetime="2026-11-05">11 月 5 日</time>
+            <div>
+              <h3>问答区新增 27 条雷电将军养成提问</h3>
+              <p>集中在「充能沙还是攻击沙」与「专武精炼收益」，已合并为两条常见问答。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <time datetime="2026-11-03">11 月 3 日</time>
+            <div>
+              <h3>修正 10 月 30 日配装文中的暴伤数值笔误</h3>
+              <p>原文写 192% 暴伤，实际面板为 178%，作者「雷电将军的刀」已在评论区置顶更正。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <time datetime="2026-10-30">10 月 30 日</time>
+            <div>
+              <h3>上线深境螺旋 12 层下半时间轴图</h3>
+              <p>从 9 分 59 秒剩余时间起算，标出万叶扩散、班尼特开大与雷神开大的三个节点。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="section" id="channels">
+        <h2>分类入口：按需求直接跳转</h2>
+        <p class="section-intro">十二个频道对应玩家在搜索框里最常输入的组合。</p>
+        <div class="index-tags">
+          <a href="/#picks">绝缘之旗印四件套词条</a>
+          <a href="/#depth">薙草之稻光精炼收益</a>
+          <a href="/#picks">渔获满精炼值不值</a>
+          <a href="/#guide">雷九万班 20 秒轴</a>
+          <a href="/#picks">超绽放队精通阈值</a>
+          <a href="/#depth">元素充能效率 250% 阈值</a>
+          <a href="/#overview">天赋升级顺序</a>
+          <a href="/#updates">深渊 12 层雷抗环境</a>
+          <a href="/#faq">充能沙与攻击沙对比</a>
+          <a href="/#comments">暴击率与暴伤分配</a>
+          <a href="/#news">版本更新与卡池时间</a>
+          <a href="/#guide">新手养成路线</a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="section" id="depth">
+        <article class="deep">
+          <h2>深度解析：充能沙不是默认答案</h2>
+          <p class="deep-dek">全页唯一主体阅读区。结论可引用，也可用你自己的面板反驳。</p>
+
+          <h3>判断一：250% 充能是循环下限，不是配装目标</h3>
+          <p>雷九万班循环里，雷电将军每次大招窗口需要回复 80 点能量。九条裟罗提供约 15 点、班尼特约 20 点、元素战技协同攻击与西风武器再补 10 至 15 点。按 80 除以（基础回能 30 加队友回能 45）估算，充能效率 250% 刚好够一轮循环不断档。超过 250% 的部分不会提高单次伤害，只会让循环更宽裕。</p>
+          <p>10 月 28 日，米游社「稻妻的雨」发布面板对照：同一套绝缘四件套，在 268% 充能、暴击率 68%、暴伤 152% 时，12 层下半耗时 74 秒；换成 252% 充能、暴击率 60%、暴伤 178% 后，耗时降到 68 秒。原因是大招窗口内的暴击期望更高，而两套都未断大。这个案例支持「过线即止」的判断。</p>
+          <div class="figures">
+            <div><strong>268% → 74s</strong><span>高充能、低暴伤面板</span></div>
+            <div><strong>252% → 68s</strong><span>过线充能、高暴伤面板</span></div>
+            <div><strong>236% → 断大</strong><span>低于下限，循环失败</span></div>
+          </div>
+
+          <h3>判断二：精五渔获的短板在爆发窗口，不在常态输出</h3>
+          <p>渔获提供 45.9% 元素充能效率副属性与 32% 元素爆发伤害加成，精炼五阶时爆发伤害加成翻倍至 64%。薙草之稻光副属性为 55.1% 充能，特效把充能转化为攻击力，并在开大后继续回能。</p>
+          <p>11 月 2 日，B 站账号「原神数据所」发布第三方对照：精一薙草与精五渔获在 240% 充能时的梦想一刀伤害分别为 12.4 万与 11.1 万，差距 11.7%；在 270% 充能时差距收窄到 8.3%。十一月的这次测量排除了深渊增益与食物 buff，只保留了班尼特与万叶加成。</p>
+
+          <h3>判断三：超绽放队里，雷电将军的精通收益在 800 点附近走平</h3>
+          <p>超绽放伤害由触发者的元素精通决定。队伍里若有久岐忍，通常由她承担大部分触发；雷电将军的协同攻击挂雷频率为每 2.1 秒一次，触发次数低于久岐忍。10 月 31 日，玩家「望舒客栈老板」在纳西妲、行秋、久岐忍、雷电将军阵容中测试，雷电将军精通从 600 提到 800，超绽放单跳伤害从 2.1 万升至 2.45 万；提到 1000 仅升至 2.56 万。边际收益明显放缓。</p>
+          <div class="quote">
+            「精通堆到 800 之后，多出来的词条不如换成充能，让雷神大招更稳。」<cite>—— 玩家「望舒客栈老板」，11 月 4 日评论</cite>
+          </div>
+
+          <h3>可核对结构：三种说法的分歧点</h3>
+          <table class="claim-table">
+            <thead>
+              <tr><th>说法</th><th>来源与日期</th><th>可核对条件</th><th>性质</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>充能沙是唯一正解</td><td>NGA 玩家帖，10 月 24 日</td><td>未附面板与录像</td><td>经验判断</td></tr>
+              <tr><td>攻击沙在 220% 充能以上可用</td><td>米游社「绝缘四缺一」，11 月 1 日</td><td>附 12 层录像 RB-1101-B</td><td>实测结论</td></tr>
+              <tr><td>攻击沙会导致断大</td><td>社区讨论，11 月 3 日</td><td>仅描述单人测试</td><td>转述</td></tr>
+              <tr><td>专武精一强于渔获精五</td><td>原神数据所，11 月 2 日</td><td>排除 buff 的对照表</td><td>实测结论</td></tr>
+            </tbody>
+          </table>
+          <p>分歧集中在两点：是否允许班尼特以外的回能来源，以及测试是否包含深渊增益。附录像的条目优先；只写结论、没有面板的帖子，只能当作线索。</p>
+
+          <h3>给不同资源玩家的结论</h3>
+          <ul class="check-list">
+            <li>已有薙草之稻光且充能 250% 以上：暴击头优先，攻击沙可在 260% 充能时尝试。</li>
+            <li>使用精五渔获且没有班尼特：保留充能沙，把暴伤杯换成雷伤杯收益更低。</li>
+            <li>超绽放队里雷神只做挂雷：精通 700 至 800，剩下堆充能，别再追双暴。</li>
+            <li>新手没有绝缘四件套：先用两件套加散件过渡，充能先到 220% 再谈暴击。</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="section" id="guide">
+        <h2>体验指南：从零到深渊 12 层的六步</h2>
+        <p class="section-intro">每一步给出可完成的条件，不依赖特定卡池运气。</p>
+        <ol class="steps">
+          <li>
+            <h3>先确定职责，再刷圣遗物</h3>
+            <p>主 C 向刷绝缘之旗印四件套；超绽放向刷花海甘露之光或饰金之梦。两套都刷会分散树脂，先定一个。</p>
+          </li>
+          <li>
+            <h3>元素爆发升到 10 级</h3>
+            <p>「奥义·梦想真说」是主要伤害来源，等级直接影响愿力倍率。元素战技到 9 级，普通攻击可停在 1 级。</p>
+          </li>
+          <li>
+            <h3>把充能堆到 220% 作为第一目标</h3>
+            <p>武器用渔获时，副属性加元素充能效率 45.9%；圣遗物沙漏选充能，主词条 51.8%。两件叠加已接近目标。</p>
+          </li>
+          <li>
+            <h3>组一套能稳定回能的队友</h3>
+            <p>没有九条裟罗时，用菲谢尔或八重神子替代；没有枫原万叶时，用砂糖扩散减抗，循环轴缩短至 18 秒。</p>
+          </li>
+          <li>
+            <h3>在 12 层上半先打一轮木桩</h3>
+            <p>记录从开大到下一次开大的秒数，超过 22 秒说明回能不足。可对照 10 月 30 日发布的时间轴图。</p>
+          </li>
+          <li>
+            <h3>依据实战录像微调词条</h3>
+            <p>如果每次都是暴击不够导致差几秒，先把暴击头换成暴伤头，再看是否需要补充能。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="section faq" id="faq">
+        <h2>常见问答</h2>
+        <p class="section-intro">问题来自 10 月至 11 月的 318 条提问，答案只针对角色本身。</p>
+        <details>
+          <summary>雷电将军用充能沙还是攻击沙？</summary>
+          <div class="ans">
+            <p>元素充能效率低于 250% 时，充能沙更稳妥，能保证雷九万班循环不断大。高于 260% 且队伍里有两个回能角色时，攻击沙可提高单次爆发伤害。</p>
+            <p>11 月 1 日的录像 RB-1101-B 中，充能 268%、攻击沙的面板在 12 层下半耗时 71 秒，低于同一账号使用充能沙的 74 秒。</p>
+          </div>
+        </details>
+        <details>
+          <summary>绝缘之旗印四件套的主词条应该怎么选？</summary>
+          <div class="ans">
+            <p>主 C 向选充能沙、雷伤杯、暴击或暴伤头。雷伤杯与攻击杯的差距在愿力满层时约 6%，差距不大，优先选副词条更好的那件。</p>
+            <p>超绽放向改选精通沙、精通杯、精通头，双暴可放弃，充能保留 180% 以上防止开不出大招。</p>
+          </div>
+        </details>
+        <details>
+          <summary>薙草之稻光精炼到几阶值得？</summary>
+          <div class="ans">
+            <p>精一即可用。精炼提升的是充能转攻击的比例与开大后的回能，精一到精五在雷九万班循环中的伤害提升约 9%，但需要额外的抽取成本。</p>
+            <p>如果已有精五渔获，精一薙草的伤害优势约 11%，主要集中在梦想一刀那一击。</p>
+          </div>
+        </details>
+        <details>
+          <summary>雷电将军在超绽放队里需要堆多少元素精通？</summary>
+          <div class="ans">
+            <p>600 至 800 点即可。超过 800 后超绽放单跳伤害的边际提升不到 5%，多出的词条不如换成充能效率，让协同攻击不断。</p>
+            <p>队伍里有久岐忍时，雷电将军触发超绽放的频率低于久岐忍，精通优先级也随之下降。</p>
+          </div>
+        </details>
+        <details>
+          <summary>没有九条裟罗，雷九万班怎么替换？</summary>
+          <div class="ans">
+            <p>可换成菲谢尔或八重神子提供雷元素共鸣与额外伤害。缺少九条裟罗的攻击力加成后，梦想一刀伤害大约下降 12%。</p>
+            <p>砂糖可以替代枫原万叶，扩散减抗数值略低，循环轴需要压缩到 18 秒。</p>
+          </div>
+        </details>
+        <details>
+          <summary>普通攻击需要升级吗？</summary>
+          <div class="ans">
+            <p>不需要。雷电将军主要靠元素爆发输出，普通攻击倍率不参与愿力计算，升级收益极低。</p>
+            <p>省下的天赋书与摩拉可以留给元素爆发从 9 级升到 10 级，这一级的提升约为 7%。</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="section" id="comments">
+        <h2>玩家评论</h2>
+        <p class="section-intro">保留不同语气，包括不认同的反馈；指向具体条目的评论保留原话。</p>
+        <div class="comments">
+          <article class="card comment">
+            <header><span class="avatar">雨</span><span class="who">稻妻的雨</span><span class="when">11 月 8 日</span></header>
+            <p>268% 充能那套确实能打，但打 12 层上半的圣骸兽太慢，雷抗 10% 加上高血量，最后还是要靠万叶扩散。</p>
+            <p class="ref">针对「绝缘四件套充能沙的两种毕业线」</p>
+          </article>
+          <article class="card comment">
+            <header><span class="avatar">绝</span><span class="who">绝缘四缺一</span><span class="when">11 月 8 日</span></header>
+            <p>补充一点，录像里我的九条裟罗带了西风猎弓，如果换成祭礼弓，回能会掉一截，雷神开大时间会延后 1.5 秒左右。</p>
+            <p class="ref">针对「雷九万班 20 秒轴」</p>
+          </article>
+          <article class="card comment">
+            <header><span class="avatar">望</span><span class="who">望舒客栈老板</span><span class="when">11 月 7 日</span></header>
+            <p>精通 800 这个点我同意，但从 600 到 800 这一段提升挺明显，建议不要一步到位，先到 700 看看实战。</p>
+            <p class="ref">针对「超绽放队精通阈值」</p>
+          </article>
+          <article class="card comment">
+            <header><span class="avatar">雷</span><span class="who">雷电将军的刀</span><span class="when">11 月 6 日</span></header>
+            <p>10 月 30 日那篇的暴伤写错了，我按 192% 去配装，怎么打都差 5 秒，后来才发现实际面板是 178%。</p>
+            <p class="ref">针对「配装文中的暴伤数值」</p>
+          </article>
+          <article class="card comment">
+            <header><span class="avatar">数</span><span class="who">原神数据所</span><span class="when">11 月 5 日</span></header>
+            <p>渔获精五和薙草精一的差距没到 11%，在班尼特加万叶的双 buff 下只有 8.6%，我们测了三次取平均。</p>
+            <p class="ref">针对「渔获满精炼值不值」</p>
+          </article>
+          <article class="card comment">
+            <header><span class="avatar">新</span><span class="who">新手村的猫</span><span class="when">11 月 4 日</span></header>
+            <p>刚抽到雷神，没有绝缘四件套，用两件套加散件把充能堆到 230%，12 层下半也能过，就是慢一点。</p>
+            <p class="ref">针对「新手养成路线」</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="section" id="news">
+        <h2>相关资讯</h2>
+        <p class="section-intro">与配装和循环直接相关的版本、卡池与活动信息。</p>
+        <div class="news-grid">
+          <article class="card news-item">
+            <span class="tag">版本</span>
+            <h3>2026 年 10 月 5 日版本更新未改动雷元素反应</h3>
+            <p>官方公告显示，本次更新只调整了部分敌人的护盾机制，超绽放反应系数保持 1.0 不变。</p>
+            <p class="meta">10 月 5 日 · 官方公告</p>
+          </article>
+          <article class="card news-item">
+            <span class="tag">卡池</span>
+            <h3>雷电将军在 10 月 22 日版本卡池中复刻</h3>
+            <p>同期四星角色为九条裟罗、久岐忍与班尼特，正好覆盖雷九万班的三个辅助位。</p>
+            <p class="meta">10 月 22 日 · 卡池公告</p>
+          </article>
+          <article class="card news-item">
+            <span class="tag">活动</span>
+            <h3>「雷霆演武」活动持续至 11 月 12 日</h3>
+            <p>活动奖励包含天赋书与精炼矿，适合给元素爆发升 9 到 10 级时补材料。</p>
+            <p class="meta">10 月 30 日 · 活动页面</p>
+          </article>
+          <article class="card news-item">
+            <span class="tag">深渊</span>
+            <h3>12 层下半怪物阵容在 11 月 1 日轮换</h3>
+            <p>新阵容加入两只圣骸兽，雷元素抗性 10%，单只血量约 38 万，队伍输出要求提高。</p>
+            <p class="meta">11 月 1 日 · 深境螺旋记录</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="section" id="rec">
+        <h2>相关推荐</h2>
+        <p class="section-intro">按你正在查找的词条排列，点击进入对应板块。</p>
+        <div class="rec-tags">
+          <a href="/#depth">绝缘之旗印暴击头与暴伤头对比</a>
+          <a href="/#picks">薙草之稻光精炼一与精炼五差距</a>
+          <a href="/#guide">雷九万班循环时间轴</a>
+          <a href="/#faq">雷电将军元素精通堆多少</a>
+          <a href="/#picks">渔获精炼五阶怎么获得</a>
+          <a href="/#updates">深渊 12 层圣骸兽打法</a>
+          <a href="/#comments">玩家真实面板分享</a>
+          <a href="/#news">雷电将军卡池复刻时间</a>
+        </div>
+      </section>
+
+      <!-- 11 可信度分层 -->
+      <section class="section" id="tiers">
+        <h2>可信度分层：怎么判断一份配装攻略能不能用</h2>
+        <p class="section-intro">同一话题下，不同来源的可靠性差别很大，先分层再看结论。</p>
+        <div class="compare">
+          <div>
+            <h3><span class="tag green">优先参考</span></h3>
+            <ul>
+              <li>附完整面板、词条与深渊录像的帖子，如 RB-1101-B</li>
+              <li>排除食物与深渊增益的第三方对照测试</li>
+              <li>官方公告与卡池页面，用于核对时间与角色</li>
+            </ul>
+          </div>
+          <div>
+            <h3><span class="tag gold">需要复核</span></h3>
+            <ul>
+              <li>只写「亲测有效」但没有面板的帖子</li>
+              <li>带深渊增益的伤害数字，通常高出 15% 以上</li>
+              <li>讨论区里转述的结论，可能丢失测试条件</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tier-list">
+          <div class="tier"><b>A 级</b><span>有录像、有面板、注明日期，结论可复现，例如「稻妻的雨」10 月 28 日的配装对照。</span></div>
+          <div class="tier"><b>B 级</b><span>有面板但缺录像，或录像被剪辑，例如 11 月 1 日的攻击沙测试。</span></div>
+          <div class="tier"><b>C 级</b><span>只有文字结论，没有条件说明，只能当作线索。</span></div>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="side" aria-label="侧栏">
+      <div class="side-box">
+        <h2>本页目录</h2>
+        <nav class="side-nav" id="sideNav">
+          <a href="/#overview">角色概览</a>
+          <a href="/#picks">精选内容推荐</a>
+          <a href="/#updates">最新更新</a>
+          <a href="/#channels">分类入口</a>
+          <a href="/#depth">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#comments">玩家评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#rec">相关推荐</a>
+          <a href="/#tiers">可信度分层</a>
+        </nav>
+      </div>
+      <div class="side-box">
+        <h3>本周新增问答</h3>
+        <div class="side-mini"><time datetime="2026-11-08">11 月 8 日</time>渔获精五在 240% 充能下够不够用</div>
+        <div class="side-mini"><time datetime="2026-11-06">11 月 6 日</time>12 层上半雷抗怪要用双雷双草吗</div>
+        <div class="side-mini"><time datetime="2026-11-03">11 月 3 日</time>雷电将军元素精通 900 点能打超绽放吗</div>
+        <div class="side-mini"><time datetime="2026-10-31">10 月 31 日</time>没有专武时攻击沙是否可行</div>
+      </div>
+      <div class="side-box">
+        <h3>配装热度榜</h3>
+        <ol class="rank-list">
+          <li>绝缘四件套 · 充能沙雷伤杯</li>
+          <li>雷九万班 · 20 秒循环轴</li>
+          <li>薙草之稻光 · 精一实战</li>
+          <li>超绽放 · 精通 800 阈值</li>
+          <li>渔获 · 精五获取路线</li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="foot-wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#2b2740"/>
+            <circle cx="32" cy="32" r="26" fill="none" stroke="#7c5fd0" stroke-width="2"/>
+            <path d="M37 7 19 36h11l-4 21 20-31H36z" fill="#d9b45a"/>
+          </svg>
+          <span>安安老师雷电将军在线</span>
+        </div>
+        <p class="foot-pos">记录雷元素爆发角色的词条取舍与循环实测，以面板、录像与日期作为结论依据。</p>
+      </div>
+      <div class="foot-col">
+        <h3>配装</h3>
+        <a href="/#picks">绝缘之旗印词条</a>
+        <a href="/#picks">薙草之稻光取舍</a>
+        <a href="/#guide">渔获获取路线</a>
+        <a href="/#faq">充能沙与攻击沙</a>
+      </div>
+      <div class="foot-col">
+        <h3>阵容</h3>
+        <a href="/#guide">雷九万班循环</a>
+        <a href="/#picks">超绽放队精通</a>
+        <a href="/#comments">玩家实战反馈</a>
+        <a href="/#tiers">可信度分层</a>
+      </div>
+      <div class="foot-col">
+        <h3>更新</h3>
+        <a href="/#updates">本周更新记录</a>
+        <a href="/#news">版本与卡池</a>
+        <a href="/#depth">深度解析</a>
+        <a href="/#faq">常见问答</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>页面内配装数据为示例整理，人物面板与录像编号用于说明来源层级，请以游戏内实际数值为准。</p>
+      <p>更新时间：2026 年 11 月 8 日 · 对应正文「最新更新」板块 · 版权归各原作者所有</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  var toTop = document.getElementById('toTop');
+  var searchInput = document.getElementById('siteSearch');
+  var feedback = document.getElementById('searchFeedback');
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+
+  // 菜单
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 760){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 回到顶部
+  function onScroll(){
+    if(window.scrollY > 480){
+      toTop.classList.add('show');
+    }else{
+      toTop.classList.remove('show');
+    }
+    // 侧栏高亮
+    var pos = window.scrollY + 160;
+    var activeIndex = -1;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos) activeIndex = i;
+    });
+    sideLinks.forEach(function(a, i){
+      a.classList.toggle('active', i === activeIndex);
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior: 'smooth'});
+    });
+  }
+
+  // 本地搜索
+  var index = [];
+  document.querySelectorAll('main .card, main .update-item, main .comment, main details, main .steps li, main .index-tags a, main .rec-tags a, main .tier, main .news-item').forEach(function(el){
+    var text = (el.textContent || '').replace(/\s+/g,' ').trim();
+    if(text.length > 3){
+      index.push({el: el, text: text.toLowerCase()});
+    }
+  });
+
+  function clearMarks(){
+    index.forEach(function(item){
+      item.el.style.outline = '';
+      item.el.style.outlineOffset = '';
+    });
+  }
+
+  function doSearch(q){
+    clearMarks();
+    var term = q.trim().toLowerCase();
+    if(!term){
+      feedback.classList.remove('show');
+      feedback.textContent = '';
+      return;
+    }
+    var hits = index.filter(function(item){ return item.text.indexOf(term) !== -1; });
+    if(hits.length === 0){
+      feedback.classList.add('show');
+      feedback.textContent = '没有找到与「' + q.trim() + '」相关的内容，试试「充能沙」「渔获」「精通」等关键词。';
+      return;
+    }
+    feedback.classList.add('show');
+    feedback.textContent = '找到 ' + hits.length + ' 条相关内容，已用描边标出。';
+    hits.slice(0, 8).forEach(function(item){
+      item.el.style.outline = '2px solid #c9962f';
+      item.el.style.outlineOffset = '2px';
+    });
+    if(hits[0].el.scrollIntoView){
+      hits[0].el.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+
+  if(searchInput){
+    var timer = null;
+    searchInput.addEventListener('input', function(e){
+      clearTimeout(timer);
+      var val = e.target.value;
+      timer = setTimeout(function(){ doSearch(val); }, 260);
+    });
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        doSearch(searchInput.value);
+      }
+      if(e.key === 'Escape'){
+        searchInput.value = '';
+        clearMarks();
+        feedback.classList.remove('show');
+      }
+    });
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.search-box')){
+        feedback.classList.remove('show');
+      }
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "安安老师雷电将军在线",
+  "description": "雷电将军配装、圣遗物词条、武器取舍、雷九万班循环与深渊实测记录。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "雷电将军用充能沙还是攻击沙？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "元素充能效率低于 250% 时，充能沙更稳妥，能保证雷九万班循环不断大。高于 260% 且队伍里有两个回能角色时，攻击沙可提高单次爆发伤害。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "绝缘之旗印四件套的主词条应该怎么选？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "主 C 向选充能沙、雷伤杯、暴击或暴伤头。雷伤杯与攻击杯的差距在愿力满层时约 6%。超绽放向改选精通沙、精通杯、精通头。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "薙草之稻光精炼到几阶值得？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "精一即可用。精炼提升充能转攻击的比例与开大后的回能，精一到精五在雷九万班循环中的伤害提升约 9%。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "雷电将军在超绽放队里需要堆多少元素精通？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "600 至 800 点即可。超过 800 后超绽放单跳伤害的边际提升不到 5%，多出的词条不如换成充能效率。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "没有九条裟罗，雷九万班怎么替换？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可换成菲谢尔或八重神子提供雷元素共鸣与额外伤害。缺少九条裟罗的攻击力加成后，梦想一刀伤害大约下降 12%。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "普通攻击需要升级吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不需要。雷电将军主要靠元素爆发输出，普通攻击倍率不参与愿力计算，升级收益极低。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+                                 </html>
