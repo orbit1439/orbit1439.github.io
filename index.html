@@ -1,0 +1,1095 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tube xxx国外片-片库导航与观看指南</title>
+<meta name="description" content="Tube xxx国外片整理国外片片库、分类导航与观看指南，涵盖欧美剧集、日韩电影、纪录片与独立短片，含精选推荐、更新记录、深度解析与常见问题，帮助快速找到想看的国外片。">
+<meta name="keywords" content="Tube xxx国外片">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151a24'/%3E%3Cpath d='M24 18l24 14-24 14z' fill='%23ff5a3c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#151a24;
+  --ink-2:#2a3140;
+  --muted:#5d6678;
+  --line:#dde2ea;
+  --paper:#f5f6f9;
+  --card:#ffffff;
+  --brand:#ff5a3c;
+  --brand-deep:#c93a20;
+  --accent:#1f6feb;
+  --accent-soft:#e7effd;
+  --ok:#1d7a4f;
+  --warn:#a35a06;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(21,26,36,.06),0 8px 24px -14px rgba(21,26,36,.28);
+  --shadow-sm:0 1px 2px rgba(21,26,36,.08);
+  --space:16px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{line-height:1.35;margin:0}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.3em}
+button{font:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.sticky-top{position:sticky;top:0;z-index:60}
+.notice-bar{
+  background:var(--ink);
+  color:#e8ebf2;
+  font-size:13.5px;
+  border-bottom:1px solid #000;
+}
+.notice-bar .wrap{
+  display:flex;align-items:center;gap:12px;min-height:40px;flex-wrap:wrap;
+  padding-top:6px;padding-bottom:6px;
+}
+.notice-bar .tag{
+  background:var(--brand);color:#fff;font-weight:700;font-size:11.5px;
+  padding:2px 8px;border-radius:999px;letter-spacing:.5px;white-space:nowrap;
+}
+.notice-bar a{color:#fff;border-bottom:1px dotted #8b93a6}
+.notice-bar a:hover{text-decoration:none;border-bottom-style:solid}
+.site-header{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:saturate(180%) blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow-sm);
+}
+.header-inner{
+  display:flex;align-items:center;gap:20px;min-height:64px;flex-wrap:wrap;
+  padding-top:10px;padding-bottom:10px;
+}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.brand-mark{width:36px;height:36px;flex:none}
+.brand-text{font-weight:800;font-size:19px;letter-spacing:.3px;white-space:nowrap}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:8px}
+.main-nav a{
+  color:var(--ink-2);font-size:14.5px;padding:6px 11px;border-radius:999px;
+  border:1px solid transparent;white-space:nowrap;
+}
+.main-nav a:hover{background:var(--accent-soft);color:var(--brand-deep);text-decoration:none}
+.header-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search-box{display:flex;align-items:center;gap:6px;position:relative}
+.search-box input{
+  width:190px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;
+  font:inherit;font-size:14px;background:#fff;color:var(--ink);
+}
+.search-box input:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px rgba(31,111,235,.16)}
+.search-box button{
+  border:0;background:var(--ink);color:#fff;padding:8px 14px;border-radius:999px;
+  font-size:14px;cursor:pointer;
+}
+.search-box button:hover{background:var(--brand-deep)}
+.search-hint{
+  position:absolute;top:calc(100% + 8px);right:0;background:var(--ink);color:#fff;
+  font-size:13px;padding:6px 10px;border-radius:var(--radius-sm);display:none;white-space:nowrap;
+}
+.search-hint.show{display:block}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-sm);
+  padding:7px 12px;cursor:pointer;color:var(--ink);font-size:14px;
+}
+
+/* ===== 首屏 ===== */
+.hero{
+  background:
+    radial-gradient(1100px 380px at 85% -10%, rgba(255,90,60,.16), transparent 60%),
+    radial-gradient(900px 420px at 0% 120%, rgba(31,111,235,.13), transparent 62%),
+    linear-gradient(180deg,#ffffff, #f5f6f9);
+  border-bottom:1px solid var(--line);
+  padding:44px 0 40px;
+  overflow:hidden;
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--brand-deep);
+  background:#fff0ec;border:1px solid #ffd6cc;border-radius:999px;padding:4px 12px;
+  font-weight:600;letter-spacing:.3px;
+}
+.hero h1{font-size:clamp(30px,4.4vw,46px);letter-spacing:-.5px;margin:14px 0 12px;font-weight:850}
+.hero-lede{font-size:16.5px;color:var(--ink-2);max-width:46em;margin-bottom:18px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.btn{
+  display:inline-block;padding:11px 20px;border-radius:10px;font-weight:700;font-size:15px;
+  border:1px solid transparent;cursor:pointer;transition:transform .15s ease, background .15s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-deep)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap}
+.hero-stats div{font-size:13px;color:var(--muted)}
+.hero-stats strong{display:block;font-size:22px;color:var(--ink);font-family:var(--mono);letter-spacing:-.5px}
+
+/* 首屏原创视觉 */
+.hero-vis{
+  position:relative;height:330px;border-radius:18px;
+  background:linear-gradient(160deg,#1a2130,#2c3140 60%,#3a3020);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.hero-vis .ring{
+  position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.16);
+}
+.hero-vis .r1{width:300px;height:300px;right:-70px;top:-70px}
+.hero-vis .r2{width:200px;height:200px;left:-60px;bottom:-70px;border-color:rgba(255,90,60,.45)}
+.hero-vis .play-tri{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:78px;height:78px;border-radius:50%;
+  background:rgba(255,90,60,.16);border:1px solid rgba(255,90,60,.7);
+  display:flex;align-items:center;justify-content:center;
+}
+.hero-vis .play-tri::after{
+  content:"";width:0;height:0;border-left:24px solid var(--brand);
+  border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:6px;
+}
+.hero-vis .chips{position:absolute;left:18px;bottom:18px;right:18px;display:flex;gap:8px;flex-wrap:wrap}
+.hero-vis .chip{
+  font-size:12px;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+  padding:3px 10px;border-radius:999px;
+}
+.hero-vis .flag{
+  position:absolute;top:18px;left:18px;display:flex;gap:6px;
+}
+.hero-vis .flag span{width:22px;height:15px;border-radius:3px;display:block}
+.f-de{background:linear-gradient(#000 33%,#d00 33% 66%,#f7c600 66%)}
+.f-fr{background:linear-gradient(90deg,#1f5fbf 33%,#fff 33% 66%,#e33 66%)}
+.f-jp{background:radial-gradient(circle at 50% 50%,#e33 0 34%,#fff 35%)}
+
+/* ===== 主内容区：双栏标准 ===== */
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 312px;gap:32px;
+  padding:40px 0 56px;align-items:start;
+}
+section[id]{scroll-margin-top:118px}
+.sec{margin-bottom:48px}
+.sec-head{margin-bottom:18px}
+.sec-head h2{
+  font-size:23px;font-weight:800;display:flex;align-items:center;gap:10px;letter-spacing:-.3px;
+}
+.sec-head h2::before{
+  content:"";width:5px;height:20px;border-radius:3px;background:var(--brand);flex:none;
+}
+.sec-sub{color:var(--muted);font-size:14px;margin-top:4px}
+
+/* 概览 */
+.overview{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;box-shadow:var(--shadow-sm);
+}
+.overview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+.ov-cell{border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 14px;background:#fbfcfe}
+.ov-cell b{display:block;font-family:var(--mono);font-size:19px;color:var(--ink)}
+.ov-cell span{font-size:12.5px;color:var(--muted)}
+
+/* 精选卡片 */
+.picks{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.pick{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.pick:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.pick img{width:100%;height:150px;object-fit:cover}
+.pick-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pick h3{font-size:16.5px;font-weight:750}
+.pick p{font-size:13.5px;color:var(--muted);margin:0}
+.pick-meta{font-size:12.5px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;font-family:var(--mono)}
+.badge{
+  display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:999px;
+  background:var(--accent-soft);color:var(--accent);font-weight:700;
+}
+.badge.hot{background:#fff0ec;color:var(--brand-deep)}
+
+/* 最新更新紧凑列表 */
+.updates{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.upd{
+  display:grid;grid-template-columns:78px 1fr auto;gap:14px;align-items:baseline;
+  padding:13px 18px;border-bottom:1px solid var(--line);
+}
+.upd:last-child{border-bottom:0}
+.upd time{font-family:var(--mono);font-size:12.5px;color:var(--muted);white-space:nowrap}
+.upd b{font-weight:700;font-size:14.5px}
+.upd span{font-size:13px;color:var(--muted)}
+.upd .type{font-size:11.5px;color:var(--warn);background:#fdf3e2;border-radius:999px;padding:1px 9px;white-space:nowrap}
+
+/* 分类入口 标签索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cat{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:13px 15px;box-shadow:var(--shadow-sm);
+}
+.cat b{display:block;font-size:14.5px;margin-bottom:2px}
+.cat span{font-size:12.5px;color:var(--muted)}
+
+/* 深度解析 */
+.analysis{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;box-shadow:var(--shadow-sm);
+}
+.analysis h3{font-size:17.5px;margin:24px 0 8px;font-weight:750}
+.analysis h3:first-of-type{margin-top:8px}
+.analysis p{font-size:15px;color:var(--ink-2)}
+.pull{
+  border-left:4px solid var(--brand);background:#fff7f5;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:12px 16px;font-size:15px;font-weight:650;color:var(--ink);margin:16px 0;
+}
+.datatable{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0 16px}
+.datatable th,.datatable td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.datatable th{background:#f2f4f8;font-weight:700;font-size:13px}
+.datatable td.num{font-family:var(--mono);white-space:nowrap}
+
+/* 体验指南 编号步骤 */
+.steps{counter-reset:st;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:st;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:14px 16px 14px 58px;position:relative;font-size:14.5px;
+}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);position:absolute;left:16px;top:13px;
+  font-family:var(--mono);font-weight:800;color:var(--brand);font-size:16px;
+}
+.steps b{display:block;margin-bottom:2px}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+.compare .col{padding:16px 18px}
+.compare .col + .col{border-left:1px solid var(--line)}
+.compare h3{font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.compare ul{font-size:13.8px;color:var(--ink-2);padding-left:1.1em;margin:0}
+.compare li{margin-bottom:6px}
+.dot-a{width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block}
+.dot-b{width:9px;height:9px;border-radius:50%;background:var(--brand);display:inline-block}
+
+/* FAQ */
+.faq{display:grid;gap:10px}
+details.q{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:0 16px;box-shadow:var(--shadow-sm);
+}
+details.q summary{
+  cursor:pointer;font-weight:700;font-size:15px;padding:14px 0;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary::after{content:"+";font-family:var(--mono);color:var(--brand);font-size:20px;flex:none}
+details.q[open] summary::after{content:"−"}
+details.q .a{padding:0 0 14px;font-size:14.2px;color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px}
+.cmt-top{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex:none}
+.avatar.b{background:var(--accent)}
+.avatar.c{background:var(--ok)}
+.avatar.d{background:var(--brand-deep)}
+.avatar.e{background:#6b4fa8}
+.cmt-name{font-weight:700;font-size:14px}
+.cmt-time{font-size:12px;color:var(--muted);font-family:var(--mono)}
+.cmt p{font-size:14px;margin:0;color:var(--ink-2)}
+.stars{color:var(--brand);font-size:12.5px;font-family:var(--mono)}
+
+/* 资讯 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding:0 0 18px 30px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{
+  content:"";position:absolute;left:2px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:3px solid var(--brand);
+}
+.timeline time{font-family:var(--mono);font-size:12.5px;color:var(--muted);display:block}
+.timeline b{font-size:14.5px}
+.timeline p{font-size:13.8px;color:var(--muted);margin:2px 0 0}
+
+/* 相关推荐 标签 */
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tags a{
+  font-size:13.5px;padding:6px 13px;border-radius:999px;border:1px solid var(--line);
+  background:var(--card);color:var(--ink-2);
+}
+.tags a:hover{border-color:var(--brand);color:var(--brand-deep);text-decoration:none;background:#fff7f5}
+
+/* 榜单 */
+.rank{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rank-row{
+  display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;
+  padding:12px 18px;border-bottom:1px solid var(--line);
+}
+.rank-row:last-child{border-bottom:0}
+.rank-num{font-family:var(--mono);font-weight:800;font-size:17px;color:var(--muted)}
+.rank-row:nth-child(1) .rank-num,.rank-row:nth-child(2) .rank-num,.rank-row:nth-child(3) .rank-num{color:var(--brand)}
+.rank-row b{font-size:14.5px;display:block}
+.rank-row span{font-size:12.5px;color:var(--muted)}
+.rank-score{font-family:var(--mono);font-size:13px;color:var(--ok)}
+
+/* 引语卡 */
+.quote-card{
+  background:linear-gradient(150deg,#1a2130,#2b3242);color:#e9ecf3;border-radius:var(--radius);
+  padding:24px 26px;box-shadow:var(--shadow);
+}
+.quote-card blockquote{margin:0 0 12px;font-size:15.5px;line-height:1.85}
+.quote-card cite{font-style:normal;font-size:13px;color:#9aa4b8}
+
+/* 用户互动投票 */
+.poll{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+.poll-opt{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:14px}
+.poll-bar{height:9px;background:#eef1f6;border-radius:999px;flex:1;overflow:hidden}
+.poll-bar i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.poll-bar i.hot{background:var(--brand)}
+.poll-pct{font-family:var(--mono);font-size:12.5px;color:var(--muted);width:44px;text-align:right}
+.poll-note{font-size:12.5px;color:var(--muted);margin-top:6px}
+
+/* 侧栏 */
+.side{display:grid;gap:20px}
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;box-shadow:var(--shadow-sm)}
+.side-card h2{font-size:15.5px;font-weight:800;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.side-card h2::before{content:"";width:4px;height:15px;background:var(--brand);border-radius:2px}
+.side-nav{position:sticky;top:118px}
+.side-nav a{
+  display:block;font-size:13.8px;color:var(--ink-2);padding:6px 10px;border-radius:7px;
+  border-left:3px solid transparent;
+}
+.side-nav a:hover{background:#f1f4f9;text-decoration:none}
+.side-nav a.active{background:var(--accent-soft);color:var(--accent);border-left-color:var(--accent);font-weight:700}
+.side-list{list-style:none;padding:0;margin:0;font-size:13.8px}
+.side-list li{padding:8px 0;border-bottom:1px dashed var(--line);display:flex;gap:8px;align-items:baseline}
+.side-list li:last-child{border-bottom:0}
+.side-list .k{font-family:var(--mono);font-size:12px;color:var(--brand-deep);flex:none}
+.side-note{font-size:12.8px;color:var(--muted);line-height:1.7}
+
+/* 阅读进度 & 返回顶部 */
+.to-top{
+  position:fixed;right:20px;bottom:26px;z-index:70;border:0;border-radius:999px;
+  background:var(--ink);color:#fff;padding:11px 16px;font-size:13.5px;cursor:pointer;
+  box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .2s, transform .2s, visibility .2s;
+}
+.to-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+.to-top:hover{background:var(--brand-deep)}
+
+/* 页尾 */
+.site-footer{background:var(--ink);color:#c9d0dd;padding:40px 0 26px;border-top:1px solid #000}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px;margin-bottom:26px}
+.footer-brand{display:flex;align-items:center;gap:10px;color:#fff;margin-bottom:10px}
+.footer-brand svg{width:30px;height:30px}
+.footer-brand b{font-size:17px;letter-spacing:.3px}
+.footer-tag{font-size:13.5px;color:#9aa4b8;line-height:1.75;max-width:26em}
+.footer-col h3{font-size:13.5px;color:#fff;margin-bottom:10px;letter-spacing:.5px}
+.footer-col a{display:block;color:#aeb7c7;font-size:13.3px;padding:3px 0}
+.footer-col a:hover{color:#fff}
+.footer-bottom{border-top:1px solid #2c3444;padding-top:18px;font-size:12.5px;color:#8b95a8;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.footer-note{font-size:12.5px;color:#8b95a8;margin-top:6px}
+
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-vis{height:250px}
+  .layout{grid-template-columns:1fr;gap:0}
+  .side{order:2;margin-top:8px}
+  .side-nav{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .menu-btn{display:inline-block}
+  .main-nav{
+    display:none;width:100%;flex-direction:column;margin:4px 0 0;gap:2px;
+    border-top:1px solid var(--line);padding-top:8px;
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:9px 12px;border-radius:8px}
+  .header-tools{margin-left:auto;width:100%;justify-content:space-between}
+  .search-box{flex:1}
+  .search-box input{width:100%}
+  section[id]{scroll-margin-top:150px}
+  .notice-bar .wrap{font-size:12.5px}
+  .picks,.cat-grid,.overview-grid{grid-template-columns:1fr 1fr}
+  .compare{grid-template-columns:1fr}
+  .compare .col + .col{border-left:0;border-top:1px solid var(--line)}
+  .analysis{padding:20px 18px}
+  .upd{grid-template-columns:1fr;gap:3px}
+  .hero{padding:32px 0 28px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .to-top{right:12px;bottom:14px;padding:10px 14px}
+}
+@media (max-width:420px){
+  .wrap{padding:0 14px}
+  .picks,.cat-grid,.overview-grid,.footer-grid{grid-template-columns:1fr}
+  .hero-stats{gap:18px}
+  .brand-text{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+  .pick:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="notice-bar" role="status">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span><strong>Tube xxx国外片</strong> 片库 11 月 8 日同步：新增《北纬 43 度》第 2 季全集 8 集，德语原声 + 简中字幕；<a href="/#updates">查看更新记录</a></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/#top" aria-label="Tube xxx国外片首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#151a24"/>
+          <rect x="10" y="16" width="44" height="32" rx="6" fill="none" stroke="#ff5a3c" stroke-width="2.5"/>
+          <path d="M27 24l14 8-14 8z" fill="#ff5a3c"/>
+          <circle cx="14" cy="20" r="2" fill="#1f6feb"/>
+        </svg>
+        <span class="brand-text">Tube xxx国外片</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选推荐</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <div class="header-tools">
+        <div class="search-box">
+          <input id="searchInput" type="search" placeholder="搜索片名 / 分类 / 国家" aria-label="站内搜索">
+          <button id="searchBtn" type="button">查找</button>
+          <span class="search-hint" id="searchHint" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="#c93a20" stroke-width="2"/><circle cx="8" cy="8" r="2.4" fill="#c93a20"/></svg>域外片库 · 2026 秋季版</span>
+        <h1 id="heroTitle">Tube xxx国外片</h1>
+        <p class="hero-lede">按国家、年代与类型整理的国外片索引：欧美剧集、日韩电影、德语纪录片、法语独立短片都能在这里找到条目页、字幕版本与观看顺序建议。片库不托管视频，只负责把片单讲清楚。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#picks">进入精选片单</a>
+          <a class="btn btn-ghost" href="/#channels">按国家分类浏览</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>1,286</strong>收录条目</div>
+          <div><strong>34</strong>来源国</div>
+          <div><strong>11/08</strong>最近同步</div>
+        </div>
+      </div>
+      <div class="hero-vis" role="img" aria-label="抽象播放界面构图，标注德语、法语、日语三个来源标签">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="flag"><span class="f-de"></span><span class="f-fr"></span><span class="f-jp"></span></div>
+        <div class="play-tri"></div>
+        <div class="chips">
+          <span class="chip">德语原声</span>
+          <span class="chip">简中字幕</span>
+          <span class="chip">1080p</span>
+          <span class="chip">8 集全</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+
+    <!-- ===== 主栏 ===== -->
+    <div class="col-main">
+
+      <!-- 1 领域概览 -->
+      <section class="sec" id="overview" aria-labelledby="ovTitle">
+        <div class="sec-head">
+          <h2 id="ovTitle">国外片领域概览</h2>
+          <p class="sec-sub">先看清片库的构成，再决定从哪条线进入。</p>
+        </div>
+        <div class="overview">
+          <p>片库里的条目按三种方式标注：来源国、首播年份、字幕来源。三者互相独立，同一部片子可能既有 2019 年柏林电影节版本，也有 2021 年流媒体重剪版本，条目页会把两个版本的时长差列在“版本差异”一栏。11 月 8 日核对时，1,286 条中有 214 条存在多版本，占 16.6%。</p>
+          <div class="overview-grid">
+            <div class="ov-cell"><b>428</b><span>欧美剧集条目</span></div>
+            <div class="ov-cell"><b>517</b><span>电影长片条目</span></div>
+            <div class="ov-cell"><b>189</b><span>纪录片与短片</span></div>
+            <div class="ov-cell"><b>152</b><span>综艺与访谈</span></div>
+          </div>
+          <p style="margin-top:14px;margin-bottom:0">字幕来源分三类：官方字幕、字幕组译制、机翻校对。条目页会标出每类对应的时间戳精度，机翻条目统一加“<span class="badge">人工校对中</span>”标记，避免和官方版本混看。</p>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="sec" id="picks" aria-labelledby="pickTitle">
+        <div class="sec-head">
+          <h2 id="pickTitle">精选内容推荐</h2>
+          <p class="sec-sub">四部在本周片单里被反复调出、且字幕版本齐全的国外片。</p>
+        </div>
+        <div class="picks">
+          <article class="pick">
+            <img src="https://picsum.photos/seed/guide-north43/640/300" width="640" height="300" loading="lazy" alt="《北纬 43 度》第二季剧照，灰色海岸与灯塔剪影">
+            <div class="pick-body">
+              <h3>北纬 43 度 第二季</h3>
+              <p>德国 ZDF 出品，8 集，单集 52 分钟。北方小镇犯罪线，德语原声配简中字幕，11 月 6 日补齐第 7、8 集。</p>
+              <div class="pick-meta"><span>德国 / 2026</span><span>8 集全</span><span class="badge hot">本周热度</span></div>
+            </div>
+          </article>
+          <article class="pick">
+            <img src="https://picsum.photos/seed/guide-parisletter/640/300" width="640" height="300" loading="lazy" alt="《巴黎来信》画面，塞纳河沿岸旧书摊与手写信纸">
+            <div class="pick-body">
+              <h3>巴黎来信</h3>
+              <p>法国独立长片，96 分钟。全片 4:3 画幅，字幕组版本保留了片头手写体法语标题，适合对照学发音。</p>
+              <div class="pick-meta"><span>法国 / 2025</span><span>长片</span><span class="badge">版本完整</span></div>
+            </div>
+          </article>
+          <article class="pick">
+            <img src="https://picsum.photos/seed/guide-tokyorain/640/300" width="640" height="300" loading="lazy" alt="《东京雨夜列车》剧照，站台灯光与雨伞">
+            <div class="pick-body">
+              <h3>东京雨夜列车</h3>
+              <p>日本 2026 年新剧，10 集。字幕组 11 月 4 日发布第 5 集修正版，修掉了上一版里 12 处地名误译。</p>
+              <div class="pick-meta"><span>日本 / 2026</span><span>更新至 5 集</span><span class="badge hot">修正版</span></div>
+            </div>
+          </article>
+          <article class="pick">
+            <img src="https://picsum.photos/seed/guide-icecore/640/300" width="640" height="300" loading="lazy" alt="《冰芯》纪录片画面，极地钻探设备与蓝色冰层断面">
+            <div class="pick-body">
+              <h3>冰芯：格陵兰 1987</h3>
+              <p>丹麦纪录片，73 分钟。1987 年 GRIP 钻探现场的修复素材占全片 61%，片尾附 9 分钟科学家访谈。</p>
+              <div class="pick-meta"><span>丹麦 / 2024</span><span>纪录片</span><span class="badge">冷门高分</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="sec" id="updates" aria-labelledby="updTitle">
+        <div class="sec-head">
+          <h2 id="updTitle">最新更新记录</h2>
+          <p class="sec-sub">11 月 2 日至 11 月 8 日的条目变动，按发生时间倒序。</p>
+        </div>
+        <div class="updates">
+          <div class="upd">
+            <time>11-08</time>
+            <div><b>《北纬 43 度》第二季</b><span>补齐第 7、8 集，德语原声简中字幕，单集 52 分钟</span></div>
+            <span class="type">新增集数</span>
+          </div>
+          <div class="upd">
+            <time>11-07</time>
+            <div><b>《曼彻斯特码头》</b><span>条目页补上 1998 年电视版与 2016 年电影版时长对照</span></div>
+            <span class="type">条目修订</span>
+          </div>
+          <div class="upd">
+            <time>11-06</time>
+            <div><b>《冰芯：格陵兰 1987》</b><span>新增片尾访谈的逐字稿，共 1,840 字</span></div>
+            <span class="type">字幕补充</span>
+          </div>
+          <div class="upd">
+            <time>11-04</time>
+            <div><b>《东京雨夜列车》</b><span>第 5 集修正版替换旧文件，修正地名误译 12 处</span></div>
+            <span class="type">版本替换</span>
+          </div>
+          <div class="upd">
+            <time>11-02</time>
+            <div><b>法语短片分类</b><span>新开“克莱蒙费朗短片节”子类，收录 26 条</span></div>
+            <span class="type">分类调整</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="sec" id="channels" aria-labelledby="chTitle">
+        <div class="sec-head">
+          <h2 id="chTitle">分类入口</h2>
+          <p class="sec-sub">按来源国与类型拆出的 9 个频道，括号内为当前条目数。</p>
+        </div>
+        <div class="cat-grid">
+          <a class="cat" href="/#picks"><b>德语剧集</b><span>ZDF、ARD 出品，178 条</span></a>
+          <a class="cat" href="/#picks"><b>法语独立长片</b><span>戛纳、克莱蒙费朗线，142 条</span></a>
+          <a class="cat" href="/#picks"><b>日本都市悬疑剧</b><span>2020 年后新剧，96 条</span></a>
+          <a class="cat" href="/#picks"><b>北欧犯罪剧</b><span>丹麦、瑞典、挪威，131 条</span></a>
+          <a class="cat" href="/#picks"><b>欧美纪录片</b><span>BBC、ARTE、DR，87 条</span></a>
+          <a class="cat" href="/#picks"><b>意大利新现实主义</b><span>1945—1975 老片修复，64 条</span></a>
+          <a class="cat" href="/#picks"><b>西班牙语剧集</b><span>Movistar+、Netflix 西语线，74 条</span></a>
+          <a class="cat" href="/#picks"><b>东欧冷战题材</b><span>波兰、捷克、匈牙利，53 条</span></a>
+          <a class="cat" href="/#picks"><b>国外短片合集</b><span>10—30 分钟，含学生作业，112 条</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="sec" id="analysis" aria-labelledby="anTitle">
+        <div class="sec-head">
+          <h2 id="anTitle">深度解析：国外片字幕版本该怎么选</h2>
+          <p class="sec-sub">一个可被反驳的判断，配三组可核对的时间线与数据。</p>
+        </div>
+        <div class="analysis">
+          <p>结论先说：在片库里，<strong>官方字幕的准确度高于字幕组译制，但观看体验并不总是更好</strong>。原因是官方版本为发行地区服务，会主动改写文化梗；字幕组版本更贴原声，却常在时间轴上超前一拍。判断方式不是看“谁更专业”，而是看你用这部片子做什么——核对台词、学语言、还是单纯看完故事。</p>
+
+          <div class="pull">可被反驳的判断：对 2020 年之后的德语剧集，字幕组版本在俚语处理上优于官方版本，但在法律术语上失误率高出约 3 倍。</div>
+
+          <h3>案例时间线：三条字幕的发布顺序</h3>
+          <p>以《北纬 43 度》第二季第 7 集为例，三个版本的时间戳差异可以直接核对：</p>
+          <table class="datatable">
+            <thead><tr><th>版本</th><th>发布时间</th><th>首句字幕出现</th><th>每集平均条目</th></tr></thead>
+            <tbody>
+              <tr><td>官方简中</td><td class="num">11-08 09:20</td><td class="num">00:00:42</td><td class="num">486</td></tr>
+              <tr><td>字幕组译制</td><td class="num">11-08 14:05</td><td class="num">00:00:39</td><td class="num">512</td></tr>
+              <tr><td>机翻校对中</td><td class="num">11-08 16:40</td><td class="num">00:00:36</td><td class="num">463</td></tr>
+            </tbody>
+          </table>
+          <p>字幕组版本比官方早 3 秒出现首句，别小看这 3 秒——片头有一段无对白的码头空镜，官方把这段留空，字幕组则提前打出环境音说明“海鸥声、远处船笛”。谁的体验更好，取决于你是否需要这层提示。</p>
+
+          <h3>数据对比：术语失误率的来源</h3>
+          <p>抽《曼彻斯特码头》2016 电影版 40 分钟样本，法律场景共 27 句对白。官方版本把 “magistrates' court” 译为“治安法院”，字幕组版本译为“地方法院”，机翻版本出现“县长法庭”。三个译法里，只有第一个对应英格兰和威尔士的初级刑事法院。同类失误在字幕组样本中出现 9 次，官方版本 3 次，机翻 21 次。差距主要来自译者是否查阅了英国法院层级表，而不是语言水平。</p>
+
+          <h3>说法差异：同一句台词的两个版本</h3>
+          <p>《巴黎来信》第 34 分钟有一句 “on ne fait pas d'omelette sans casser des œufs”。官方字幕译成“做事总有代价”，字幕组译成“不打碎鸡蛋就摊不成蛋饼”。前者丢失了厨房意象，后者保留了但略生硬。两种译法都在 11 月 3 日被用户标注过，条目页把两条都列在“译法对照”里，没有判定谁对。这类处理适合做语言学习材料，不适合当唯一权威。</p>
+
+          <h3>规则前后变化：2024 年的分类调整</h3>
+          <p>2024 年 6 月之前，片库把“机翻校对中”与“字幕组译制”合并成“非官方字幕”一类。合并期间，用户反馈区收到 41 条关于时间轴错误的投诉，其中 33 条指向机翻版本。2024 年 7 月起两类拆开，机翻条目单独加标记，投诉量在随后三个月降到 9 条。这条变化说明分类粒度本身影响使用判断，不只是标签美观问题。</p>
+
+          <p style="margin-bottom:0">如果只记一句话：<strong>核对事实用官方版，感受语气用字幕组版，赶时间别开机翻版</strong>。这个结论对 2020 年后的德语、法语剧集成立；对 1990 年代意大利老片未必成立，因为老片官方字幕往往缺失，字幕组版本是唯一选择。</p>
+        </div>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="sec" id="guide" aria-labelledby="gdTitle">
+        <div class="sec-head">
+          <h2 id="gdTitle">观看体验指南：五步找到合适的版本</h2>
+          <p class="sec-sub">从搜索到播放，每一步都可以在条目页完成。</p>
+        </div>
+        <ol class="steps">
+          <li><b>先定来源国，再定年份</b>片库顶部的分类入口按国家切分，点进德国频道后再用年份筛选。2020 年后的条目字幕更全，1990 年代前的条目常有缺失。</li>
+          <li><b>看条目页的“版本差异”栏</b>同一片名出现两个时长，说明存在剪辑差异。《曼彻斯特码头》电视版 182 分钟、电影版 137 分钟，差 45 分钟，主要在第二幕。</li>
+          <li><b>核对字幕标记</b>官方、字幕组、机翻三类标记颜色不同。机翻条目标“人工校对中”时，前 10 分钟通常已校完，后段仍有风险。</li>
+          <li><b>用片名关键词搜索</b>输入“北纬”或“格陵兰”这类具体词，比输入“国外片”更快命中。搜索只在本页条目内匹配，搜不到会提示换词。</li>
+          <li><b>记录你用的版本</b>评论区按“片名 + 版本 + 时间戳”留言，方便别人复现你的判断。11 月 6 日有用户标注《冰芯》第 41 分钟字幕错位，后续版本已修正。</li>
+        </ol>
+      </section>
+
+      <!-- 7 对照面板 -->
+      <section class="sec" id="compare" aria-labelledby="cpTitle">
+        <div class="sec-head">
+          <h2 id="cpTitle">剧集与长片：两种观看节奏的对照</h2>
+          <p class="sec-sub">同一片库里，剧集和长片的挑选逻辑并不一样。</p>
+        </div>
+        <div class="compare">
+          <div class="col">
+            <h3><span class="dot-a"></span>剧集：按集追，重连续性</h3>
+            <ul>
+              <li>单集 45—60 分钟，整季 6—10 集，适合两周内看完</li>
+              <li>字幕组通常同步更新，官方版本滞后 1—3 天</li>
+              <li>第 5 集后常有修正版，旧版地名误译集中在第 3—6 集</li>
+              <li>《北纬 43 度》第二季 8 集，11 月 6 日补齐后无缺集</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3><span class="dot-b"></span>长片：一次看完，重版本</h3>
+            <ul>
+              <li>90—180 分钟，电影节版与流媒体版时长常差 10—45 分钟</li>
+              <li>官方字幕覆盖率高，但文化梗改写多</li>
+              <li>独立长片字幕组版本常带译者注，位置在画面下方</li>
+              <li>《巴黎来信》96 分钟，4:3 画幅，两个版本均保留片头手写体</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 FAQ -->
+      <section class="sec" id="faq" aria-labelledby="fqTitle">
+        <div class="sec-head">
+          <h2 id="fqTitle">常见问题</h2>
+          <p class="sec-sub">关于国外片条目、字幕与版本的高频疑问。</p>
+        </div>
+        <div class="faq">
+          <details class="q">
+            <summary>德语剧集的官方字幕为什么常比字幕组晚一两天？</summary>
+            <div class="a">ZDF 与 ARD 的官方字幕由发行方委托翻译公司制作，流程含译、审、时间轴三道，通常在本土播出后 24—48 小时上线。字幕组多在本土播出当晚开始译制，11 月 6 日《北纬 43 度》第 7 集就是字幕组先出、官方次日补。</div>
+          </details>
+          <details class="q">
+            <summary>同一部国外片出现两个时长，该信哪一个？</summary>
+            <div class="a">两个时长都真实，差别在剪辑版本。电影节版通常更长，流媒体版会压缩支线。条目页的“版本差异”栏列出被删段落的位置，比如《曼彻斯特码头》电影版删掉的是第二幕码头工会会议共 45 分钟。按你想看的故事线选，不必追求“完整版”。</div>
+          </details>
+          <details class="q">
+            <summary>机翻校对中的条目能看吗？</summary>
+            <div class="a">前 10 分钟一般已校完，可以看；后段术语密集处仍有风险。11 月 7 日抽检 20 条机翻条目的法律对白，平均每 10 分钟出现 2.3 处术语偏差。赶时间可以看，核对台词建议换官方版本。</div>
+          </details>
+          <details class="q">
+            <summary>法语短片合集里的学生作业值得看吗？</summary>
+            <div class="a">克莱蒙费朗短片节子类收录的 26 条里，学生作业占 11 条，时长 10—22 分钟。画面稳定性不如职业作品，但题材更敢碰。11 月 2 日新开的这个子类，被调出次数最多的是《圣但尼的下午》，19 分钟，讲郊区公交调度员。</div>
+          </details>
+          <details class="q">
+            <summary>搜索片名搜不到怎么办？</summary>
+            <div class="a">本页搜索只匹配当前页面列出的条目与分类名，不做全站索引。搜不到时换用来源国、年份或类型词试一次，例如把“北纬”换成“德语剧集”。仍无结果会给出提示，不会返回空白页。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 9 用户评论 -->
+      <section class="sec" id="comments" aria-labelledby="cmTitle">
+        <div class="sec-head">
+          <h2 id="cmTitle">用户评论</h2>
+          <p class="sec-sub">来自条目页与片单页的留言，含正面、中性与会挑刺的。</p>
+        </div>
+        <div class="comments">
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">林</span><span class="cmt-name">林舟</span><span class="cmt-time">11-08 10:12</span><span class="stars">★★★★☆</span></div>
+            <p>《北纬 43 度》第二季第 6 集码头那场夜戏，字幕组把“Mole”译成“防波堤”是对的，官方版本译“码头”反而丢了结构层次。这条值得记一下。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar b">陈</span><span class="cmt-name">陈默</span><span class="cmt-time">11-07 21:40</span><span class="stars">★★★☆☆</span></div>
+            <p>《曼彻斯特码头》电视版 182 分钟，我分两晚看完，第二幕工会会议太拖。电影版 137 分钟剪得利落，但少了那场会议，后面人物的选择就不太站得住。两个版本各有问题。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar c">何</span><span class="cmt-name">何雨</span><span class="cmt-time">11-07 15:03</span><span class="stars">★★★★★</span></div>
+            <p>《冰芯：格陵兰 1987》片尾 9 分钟访谈值回票价。1987 年 GRIP 钻探那批人讲当年设备故障，比正片还具体。字幕逐字稿 1,840 字，我对着看了一遍。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar d">周</span><span class="cmt-name">周叙</span><span class="cmt-time">11-06 09:18</span><span class="stars">★★☆☆☆</span></div>
+            <p>机翻版《东京雨夜列车》第 5 集旧文件能不能彻底下掉？我 11 月 3 日下的还是误译版，站台名全错。修正版 4 日才发，标记不够醒目。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar e">吴</span><span class="cmt-name">吴其</span><span class="cmt-time">11-05 22:26</span><span class="stars">★★★★☆</span></div>
+            <p>《巴黎来信》4:3 画幅看得很舒服。字幕组保留了片头手写体，官方版本换成印刷体，少了点味道。不过字幕组的译者注有时压到画面，第 52 分钟那条挡住了人物脸。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar b">许</span><span class="cmt-name">许澄</span><span class="cmt-time">11-03 19:55</span><span class="stars">★★★☆☆</span></div>
+            <p>法语短片新子类 26 条，我刷了 10 条。学生作业里《圣但尼的下午》最好，19 分钟讲公交调度员，节奏稳。另外几条摄影晃得厉害，看久了头晕，建议标注拍摄设备。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 相关资讯 时间线 -->
+      <section class="sec" id="news" aria-labelledby="nwTitle">
+        <div class="sec-head">
+          <h2 id="nwTitle">相关资讯</h2>
+          <p class="sec-sub">影响片库条目与字幕选择的近期动态。</p>
+        </div>
+        <ul class="timeline">
+          <li>
+            <time>2026-11-06</time>
+            <b>《北纬 43 度》第二季收官</b>
+            <p>ZDF 本土播出第 8 集，片库同步补齐。第二季共 8 集，无第三季续订消息。</p>
+          </li>
+          <li>
+            <time>2026-11-04</time>
+            <b>《东京雨夜列车》字幕修正版发布</b>
+            <p>修正第 5 集 12 处地名误译，涉及“新宿三丁目”与“代代木”两站。</p>
+          </li>
+          <li>
+            <time>2026-11-02</time>
+            <b>克莱蒙费朗短片节子类上线</b>
+            <p>收录 26 条，学生作业 11 条，10—22 分钟，均带法语原声与简中字幕。</p>
+          </li>
+          <li>
+            <time>2026-10-28</time>
+            <b>《冰芯》修复素材授权说明</b>
+            <p>丹麦 DR 公布 1987 年钻探素材的修复范围，共 47 分钟，片库引用其中 44 分钟。</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 11 相关推荐 标签 -->
+      <section class="sec" id="related" aria-labelledby="rlTitle">
+        <div class="sec-head">
+          <h2 id="rlTitle">相关推荐</h2>
+          <p class="sec-sub">按具体片名、译名与题材检索的标签。</p>
+        </div>
+        <div class="tags">
+          <a href="/#picks">北纬 43 度第二季</a>
+          <a href="/#picks">巴黎来信 4:3</a>
+          <a href="/#picks">东京雨夜列车修正版</a>
+          <a href="/#picks">冰芯格陵兰 1987</a>
+          <a href="/#picks">曼彻斯特码头电视版</a>
+          <a href="/#picks">克莱蒙费朗短片</a>
+          <a href="/#channels">德语剧集字幕</a>
+          <a href="/#channels">北欧犯罪剧</a>
+          <a href="/#channels">意大利新现实主义</a>
+          <a href="/#analysis">字幕版本对照</a>
+        </div>
+      </section>
+
+      <!-- 12 榜单 & 互动 -->
+      <section class="sec" id="rank" aria-labelledby="rkTitle">
+        <div class="sec-head">
+          <h2 id="rkTitle">本周国外片条目调出榜</h2>
+          <p class="sec-sub">按条目页 11 月 2 日至 8 日的调出次数排序。</p>
+        </div>
+        <div class="rank">
+          <div class="rank-row"><span class="rank-num">01</span><div><b>北纬 43 度 第二季</b><span>德国 / 剧集 / 8 集全</span></div><span class="rank-score">2,148 次</span></div>
+          <div class="rank-row"><span class="rank-num">02</span><div><b>东京雨夜列车</b><span>日本 / 剧集 / 更新至 5 集</span></div><span class="rank-score">1,706 次</span></div>
+          <div class="rank-row"><span class="rank-num">03</span><div><b>曼彻斯特码头</b><span>英国 / 双版本 / 182 与 137 分钟</span></div><span class="rank-score">1,392 次</span></div>
+          <div class="rank-row"><span class="rank-num">04</span><div><b>巴黎来信</b><span>法国 / 长片 / 96 分钟</span></div><span class="rank-score">987 次</span></div>
+          <div class="rank-row"><span class="rank-num">05</span><div><b>冰芯：格陵兰 1987</b><span>丹麦 / 纪录片 / 73 分钟</span></div><span class="rank-score">604 次</span></div>
+        </div>
+
+        <div class="poll" style="margin-top:18px">
+          <h3 style="font-size:15.5px;margin-bottom:12px">你会优先选哪种字幕版本？</h3>
+          <div class="poll-opt"><span style="width:86px">官方字幕</span><span class="poll-bar"><i style="width:46%"></i></span><span class="poll-pct">46%</span></div>
+          <div class="poll-opt"><span style="width:86px">字幕组译制</span><span class="poll-bar"><i class="hot" style="width:38%"></i></span><span class="poll-pct">38%</span></div>
+          <div class="poll-opt"><span style="width:86px">机翻校对</span><span class="poll-bar"><i style="width:9%"></i></span><span class="poll-pct">9%</span></div>
+          <div class="poll-opt"><span style="width:86px">无字幕原声</span><span class="poll-bar"><i style="width:7%"></i></span><span class="poll-pct">7%</span></div>
+          <p class="poll-note">样本 1,204 次点击，统计截至 11 月 8 日 12:00。结果仅反映本页访问者选择，不代表全站。</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ===== 侧栏 ===== -->
+    <aside class="side" aria-label="侧栏导航与速览">
+      <div class="side-card side-nav">
+        <h2>栏目速览</h2>
+        <nav aria-label="侧栏页内导航">
+          <a href="/#overview">领域概览</a>
+          <a href="/#picks">精选内容推荐</a>
+          <a href="/#updates">最新更新记录</a>
+          <a href="/#channels">分类入口</a>
+          <a href="/#analysis">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#rank">调出榜与投票</a>
+        </nav>
+      </div>
+
+      <div class="side-card">
+        <h2>版本速记</h2>
+        <ul class="side-list">
+          <li><span class="k">DE</span><span>官方字幕滞后 24—48 小时</span></li>
+          <li><span class="k">FR</span><span>独立长片译者注常压画面</span></li>
+          <li><span class="k">JP</span><span>修正版集中在第 3—6 集</span></li>
+          <li><span class="k">DK</span><span>纪录片访谈优先看逐字稿</span></li>
+          <li><span class="k">UK</span><span>双版本核对第二幕差异</span></li>
+        </ul>
+        <p class="side-note" style="margin-top:10px">速记只对应本页提到的条目，不构成通用规则。</p>
+      </div>
+
+      <div class="side-card">
+        <h2>值得一读的引语</h2>
+        <div class="quote-card">
+          <blockquote>“1987 年那批冰芯，我们只带回 2,000 米，其中 300 米在运输途中化了。片子没讲这部分，访谈里讲了。”</blockquote>
+          <cite>——《冰芯：格陵兰 1987》片尾访谈，钻探工程师 J. 汉森，11 月 6 日逐字稿</cite>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <h2>片库数据说明</h2>
+        <p class="side-note">条目数、版本数、调出次数均为示例数据，用于演示页面结构，不代表真实统计。日期以 2026 年 11 月 8 日为基准，区间为 10 月 9 日至 11 月 8 日。</p>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#2a3140"/>
+            <rect x="10" y="16" width="44" height="32" rx="6" fill="none" stroke="#ff5a3c" stroke-width="2.5"/>
+            <path d="M27 24l14 8-14 8z" fill="#ff5a3c"/>
+          </svg>
+          <b>Tube xxx国外片</b>
+        </div>
+        <p class="footer-tag">按来源国、年份与字幕版本整理域外影视条目，重点做清版本差异与术语译法，不做视频托管。</p>
+        <p class="footer-note">页脚更新时间：2026-11-08，对应正文“最新更新记录”中的 5 条变动。</p>
+      </div>
+      <div class="footer-col">
+        <h3>片库</h3>
+        <a href="/#picks">德语剧集</a>
+        <a href="/#picks">法语独立长片</a>
+        <a href="/#picks">日本都市悬疑剧</a>
+        <a href="/#picks">北欧犯罪剧</a>
+        <a href="/#picks">欧美纪录片</a>
+      </div>
+      <div class="footer-col">
+        <h3>阅读</h3>
+        <a href="/#analysis">字幕版本对照</a>
+        <a href="/#guide">观看体验指南</a>
+        <a href="/#compare">剧集与长片对照</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#rank">本周调出榜</a>
+      </div>
+      <div class="footer-col">
+        <h3>互动</h3>
+        <a href="/#comments">用户评论</a>
+        <a href="/#rank">字幕版本投票</a>
+        <a href="/#updates">更新记录</a>
+        <a href="/#related">相关推荐标签</a>
+        <a href="/#news">相关资讯</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tube xxx国外片 · 示例站点，条目与数据仅用于演示</span>
+      <span>内容整理：片库编辑组 · 联系方式与授权信息以实际运营方资料为准</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">回到顶部</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  var toTop = document.getElementById('toTop');
+  var input = document.getElementById('searchInput');
+  var searchBtn = document.getElementById('searchBtn');
+  var hint = document.getElementById('searchHint');
+
+  /* 移动端菜单 */
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.textContent = open ? '收起' : '菜单';
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 760){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.textContent = '菜单';
+      }
+    });
+  }
+
+  /* 搜索：本地匹配 */
+  var index = [];
+  document.querySelectorAll('main h2, main h3, main .cat b, main .rank-row b, main .pick h3').forEach(function(el){
+    var text = el.textContent.trim();
+    if(text && text.length < 30){ index.push({text:text, el:el}); }
+  });
+  function doSearch(){
+    var q = (input.value || '').trim();
+    if(!q){ hint.textContent = '请输入片名或分类词'; hint.classList.add('show'); return; }
+    var hit = null;
+    for(var i=0;i<index.length;i++){
+      if(index[i].text.indexOf(q) !== -1){ hit = index[i]; break; }
+    }
+    if(hit){
+      var sec = hit.el.closest('section');
+      var target = sec || hit.el;
+      if(target.id){ location.hash = '/' + target.id; }
+      hint.textContent = '找到：' + hit.text;
+      hint.classList.add('show');
+      clearTimeout(hint._t);
+      hint._t = setTimeout(function(){ hint.classList.remove('show'); }, 2600);
+    } else {
+      hint.textContent = '未找到「' + q + '」，试试“北纬”或“德语剧集”';
+      hint.classList.add('show');
+      clearTimeout(hint._t);
+      hint._t = setTimeout(function(){ hint.classList.remove('show'); }, 3200);
+    }
+  }
+  if(searchBtn){ searchBtn.addEventListener('click', doSearch); }
+  if(input){
+    input.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doSearch(); } });
+  }
+
+  /* 返回顶部 */
+  function onScroll(){
+    if(window.scrollY > 480){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  if(toTop){ toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); }); }
+  onScroll();
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('.side-nav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  }).filter(Boolean);
+  function highlight(){
+    var pos = window.scrollY + 140;
+    var current = null;
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= pos){ current = sec.id; }
+    });
+    sideLinks.forEach(function(a){
+      var id = a.getAttribute('href').split('#')[1];
+      if(id === current){ a.classList.add('active'); }
+      else { a.classList.remove('active'); }
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  window.addEventListener('resize', highlight);
+  highlight();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Tube xxx国外片",
+  "description": "按来源国、年份与字幕版本整理国外片条目的索引站点，含精选推荐、更新记录、分类入口与字幕版本解析。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "德语剧集的官方字幕为什么常比字幕组晚一两天？",
+      "acceptedAnswer": {"@type": "Answer", "text": "官方字幕由发行方委托翻译公司制作，流程含译、审、时间轴三道，通常在本土播出后 24—48 小时上线；字幕组多在本土播出当晚开始译制。"}
+    },
+    {
+      "@type": "Question",
+      "name": "同一部国外片出现两个时长，该信哪一个？",
+      "acceptedAnswer": {"@type": "Answer", "text": "两个时长都真实，差别在剪辑版本。电影节版通常更长，流媒体版会压缩支线，条目页的版本差异栏会列出被删段落位置。"}
+    },
+    {
+      "@type": "Question",
+      "name": "机翻校对中的条目能看吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "前 10 分钟一般已校完，可以看；后段术语密集处仍有风险。核对台词建议换官方版本。"}
+    },
+    {
+      "@type": "Question",
+      "name": "法语短片合集里的学生作业值得看吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "克莱蒙费朗短片节子类收录 26 条，学生作业占 11 条，时长 10—22 分钟，画面稳定性不如职业作品但题材更敢碰。"}
+    },
+    {
+      "@type": "Question",
+      "name": "搜索片名搜不到怎么办？",
+      "acceptedAnswer": {"@type": "Answer", "text": "本页搜索只匹配当前页面列出的条目与分类名，搜不到时换用来源国、年份或类型词再试一次，仍无结果会给出提示。"}
+    }
+  ]
+}
+</script>
+
+</body>
+  </html>
