@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>印象足拍45期-影像专题与拍摄手记</title>
+<meta name="description" content="印象足拍45期聚焦街头与室内足部影像拍摄：收录本期12组主题设定、光线与镜头参数、成片挑选逻辑与拍摄者答疑，附分类索引、深度解析与读者反馈，方便按城市、时段、器材与题材查找可复用手记。">
+<meta name="keywords" content="印象足拍45期">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4854'/%3E%3Cpath d='M20 18h24v6H26v6h14v6H26v10h-6z' fill='%23e8b04b'/%3E%3Ccircle cx='46' cy='44' r='6' fill='%23f3e3c3'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1d2b33;
+  --ink-soft:#41535d;
+  --muted:#6b7d87;
+  --paper:#f6f2ea;
+  --card:#fffdf8;
+  --line:#ddd5c6;
+  --brand:#2f4854;
+  --brand-2:#3d6472;
+  --accent:#c8892b;
+  --accent-soft:#f0e2c7;
+  --ok:#3f7a5e;
+  --warn:#a8552f;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(29,43,51,.07);
+  --shadow-lg:0 10px 26px rgba(29,43,51,.12);
+  --space:20px;
+  --font:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --sticky-offset:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);
+  background:var(--paper);line-height:1.75;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0 0 .5em;line-height:1.35;font-weight:700}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+section{scroll-margin-top:var(--sticky-offset)}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:10px 16px;z-index:200}
+.skip:focus{left:8px;top:8px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* 吸顶公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:linear-gradient(90deg,#263b45,#33525f 55%,#2f4854);
+  color:#f4ecdb;font-size:14px;
+  border-bottom:1px solid rgba(255,255,255,.14);
+}
+.announce .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:8px 0}
+.announce .tag{
+  background:var(--accent);color:#20160a;font-weight:700;
+  padding:1px 9px;border-radius:999px;font-size:12.5px;letter-spacing:.04em;white-space:nowrap;
+}
+.announce a{color:#ffe0a8;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.announce .ann-time{color:#c8d6dc;font-size:13px;margin-left:auto;white-space:nowrap}
+
+/* 页头 */
+.site-head{
+  position:sticky;top:43px;z-index:55;
+  background:rgba(255,253,248,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 2px 8px rgba(29,43,51,.05);
+}
+.head-inner{display:flex;align-items:center;gap:18px;padding:12px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.brand-mark{width:42px;height:42px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-name{font-size:19px;font-weight:800;letter-spacing:.03em}
+.brand-sub{font-size:11.5px;color:var(--muted);letter-spacing:.16em}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:6px}
+.main-nav a{
+  padding:7px 11px;border-radius:999px;font-size:14.5px;color:var(--ink-soft);
+  white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a.is-active{background:var(--accent-soft);color:#7a5210;text-decoration:none}
+.head-tools{display:flex;align-items:center;gap:10px;margin-left:auto}
+.search-box{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:#fff;padding:2px 4px 2px 12px}
+.search-box input{
+  border:0;outline:0;background:transparent;font:inherit;font-size:14px;
+  width:150px;padding:6px 2px;color:var(--ink);
+}
+.search-box button{
+  border:0;background:var(--brand);color:#fff;border-radius:999px;
+  padding:6px 13px;font-size:13.5px;cursor:pointer;font-family:inherit;
+}
+.search-box button:hover{background:var(--brand-2)}
+.menu-toggle{
+  display:none;border:1px solid var(--line);background:#fff;color:var(--ink);
+  border-radius:999px;padding:7px 14px;font:inherit;font-size:14px;cursor:pointer;
+}
+.search-feedback{font-size:13.5px;color:var(--warn);width:100%;display:none}
+.search-feedback.show{display:block}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#f8f3e9 0%,#eee6d6 60%,#e4dccb 100%);border-bottom:1px solid var(--line)}
+.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:52px 0 46px}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.18em;
+  color:#8a6a25;background:#f6e8ca;border:1px solid #e6d1a5;
+  padding:4px 12px;border-radius:999px;margin-bottom:16px;
+}
+.hero h1{font-size:clamp(30px,4.4vw,46px);letter-spacing:.02em;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-lead{font-size:16.5px;color:var(--ink-soft);max-width:46ch;margin-bottom:22px}
+.hero-lead b{color:var(--ink)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+  padding:11px 22px;font-size:15px;font-weight:600;border:1px solid transparent;
+  cursor:pointer;transition:transform .16s ease,box-shadow .16s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--shadow)}
+.btn-primary:hover{background:var(--brand-2)}
+.btn-ghost{background:#fffdf8;color:var(--brand);border-color:#c9bfa9}
+.btn-ghost:hover{background:#fbf6ec}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;border-top:1px dashed #cbbfa8;padding-top:16px}
+.hero-stats div{min-width:86px}
+.hero-stats b{display:block;font-size:22px;color:var(--brand);line-height:1.2}
+.hero-stats span{font-size:12.5px;color:var(--muted)}
+.hero-art{position:relative;min-height:330px}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 28px rgba(29,43,51,.14))}
+
+/* 主区域布局：左侧常驻导航+主内容 */
+.layout{display:grid;grid-template-columns:236px minmax(0,1fr);gap:30px;padding:34px 0 20px}
+.side-nav{
+  align-self:start;position:sticky;top:var(--sticky-offset);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 10px;box-shadow:var(--shadow);
+}
+.side-nav h2{font-size:13px;letter-spacing:.14em;color:var(--muted);padding:0 10px;margin-bottom:8px}
+.side-nav ul{list-style:none;margin:0;padding:0}
+.side-nav a{
+  display:block;padding:7px 11px;border-radius:var(--radius-sm);font-size:14px;
+  color:var(--ink-soft);border-left:3px solid transparent;
+}
+.side-nav a:hover{background:#f3eee3;text-decoration:none}
+.side-nav a.is-active{background:var(--accent-soft);color:#7a5210;border-left-color:var(--accent);font-weight:600}
+.side-note{margin-top:12px;padding:11px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted);line-height:1.6}
+.side-note b{color:var(--ink-soft)}
+
+.panel{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 26px;margin-bottom:26px;box-shadow:var(--shadow);
+}
+.panel > h2{
+  font-size:22px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;
+}
+.panel > h2 .idx{
+  font-size:12px;font-weight:700;color:#7a5210;background:var(--accent-soft);
+  border-radius:6px;padding:2px 8px;letter-spacing:.08em;
+}
+.panel .lead{color:var(--ink-soft);font-size:15px;margin-bottom:18px}
+h3{font-size:17px;margin-top:20px}
+h4{font-size:15px;margin:14px 0 6px}
+.small{font-size:13.5px;color:var(--muted)}
+.kv{color:var(--ink-soft)}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 14px}
+.chip{
+  font-size:13px;background:#f2ede0;border:1px solid #e2d8c3;color:#5a4a24;
+  padding:4px 11px;border-radius:999px;
+}
+.chip:hover{text-decoration:none;background:#ece4d2}
+.tag-accent{background:var(--accent-soft);border-color:#e6cb96;color:#7a5210}
+
+/* 卡片网格 */
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius);background:#fffdf8;
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .16s ease,box-shadow .16s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card img{width:100%;height:150px;object-fit:cover}
+.card-body{padding:14px 15px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card-body h3{font-size:15.5px;margin:0}
+.card-body p{font-size:13.5px;color:var(--ink-soft);margin:0;line-height:1.65}
+.card-meta{font-size:12px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+
+/* 紧凑列表 */
+.list-tight{list-style:none;padding:0;margin:0}
+.list-tight li{
+  display:grid;grid-template-columns:88px 1fr auto;gap:12px;align-items:baseline;
+  padding:11px 0;border-bottom:1px dashed var(--line);font-size:14.5px;
+}
+.list-tight li:last-child{border-bottom:0}
+.list-tight .date{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+.list-tight .meta{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.list-tight .hl{font-weight:600;color:var(--ink)}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  display:flex;flex-direction:column;gap:3px;text-decoration:none;
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 13px;
+  background:linear-gradient(180deg,#fffdf8,#f8f3e8);
+}
+.cat:hover{text-decoration:none;border-color:#c8b48a;background:#fbf5e9}
+.cat b{font-size:14.5px;color:var(--ink)}
+.cat span{font-size:12.5px;color:var(--muted)}
+
+/* 深度解析：分栏正文 */
+.reading{
+  display:grid;grid-template-columns:minmax(0,1fr) 218px;gap:24px;
+}
+.reading-main{min-width:0}
+.reading-main h3{margin-top:26px;padding-top:16px;border-top:1px solid #e7e0d2}
+.reading-main h3:first-child{margin-top:0;padding-top:0;border-top:0}
+.reading-main p{font-size:15.5px;text-align:justify}
+.reading-aside{
+  border-left:1px solid var(--line);padding-left:20px;font-size:13.5px;color:var(--ink-soft);
+}
+.reading-aside h4{font-size:13px;letter-spacing:.1em;color:var(--muted)}
+.verify{
+  background:#f4f7f6;border:1px solid #cfe0d9;border-left:4px solid var(--ok);
+  border-radius:var(--radius-sm);padding:13px 15px;margin:14px 0;
+}
+.verify h4{margin-top:0;color:var(--ok);font-size:14px}
+.verify ul{margin:0;padding-left:1.1em;font-size:13.5px}
+blockquote{
+  margin:16px 0;padding:14px 18px;background:#f7f1e3;border-left:4px solid var(--accent);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:14.5px;color:#4a3a18;
+}
+blockquote cite{display:block;font-size:12.5px;color:var(--muted);font-style:normal;margin-top:6px}
+
+/* 编号步骤 */
+.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:s;position:relative;padding:14px 16px 14px 54px;
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fffdf8;
+}
+.steps li::before{
+  content:counter(s);position:absolute;left:14px;top:13px;width:26px;height:26px;
+  border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;
+  font-size:13.5px;font-weight:700;
+}
+.steps b{display:block;margin-bottom:2px;font-size:14.5px}
+.steps p{margin:0;font-size:13.5px;color:var(--ink-soft)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.compare > div{padding:16px 18px}
+.compare .col-a{background:#f6f9f8;border-right:1px solid var(--line)}
+.compare .col-b{background:#fdf7ec}
+.compare h4{margin-top:0;font-size:14.5px}
+.compare ul{margin:0;padding-left:1.15em;font-size:13.8px}
+.compare li{margin-bottom:6px}
+
+/* FAQ */
+details{
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fffdf8;
+  padding:0 16px;margin-bottom:10px;
+}
+details[open]{background:#fbf7ed;border-color:#d9c8a6}
+summary{
+  cursor:pointer;padding:13px 0;font-weight:600;font-size:15px;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:flex-start;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";color:var(--accent);font-weight:700;flex:none}
+details[open] summary::after{content:"－"}
+details .ans{padding:0 0 14px;font-size:14px;color:var(--ink-soft)}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.comment{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 15px;background:#fffdf8;
+}
+.comment header{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap;margin-bottom:5px}
+.comment .who{font-weight:700;font-size:14px}
+.comment .when{font-size:12.5px;color:var(--muted)}
+.comment .tone{font-size:11.5px;padding:1px 8px;border-radius:999px;background:#eef1f0;color:#4d5f57}
+.comment .tone.crit{background:#fbeae2;color:var(--warn)}
+.comment .tone.mid{background:#eef0f5;color:#4b5570}
+.comment p{margin:0;font-size:14px;color:var(--ink-soft)}
+.comment p b{color:var(--ink)}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:#e0d6c2}
+.timeline li{position:relative;padding:0 0 16px 30px}
+.timeline li::before{
+  content:"";position:absolute;left:2px;top:7px;width:12px;height:12px;border-radius:50%;
+  background:var(--card);border:2px solid var(--accent);
+}
+.timeline b{display:block;font-size:14.5px}
+.timeline span{font-size:12.5px;color:var(--muted);display:block;margin-bottom:2px}
+.timeline p{margin:0;font-size:13.8px;color:var(--ink-soft)}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:r}
+.rank li{
+  counter-increment:r;display:grid;grid-template-columns:34px 1fr auto;gap:12px;
+  align-items:center;padding:11px 0;border-bottom:1px dashed var(--line);
+}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  content:counter(r);font-weight:800;color:#b08a3e;font-size:16px;text-align:center;
+}
+.rank b{font-size:14.5px}
+.rank .why{display:block;font-size:12.8px;color:var(--muted)}
+.rank .score{font-size:13px;color:var(--brand);font-weight:700;white-space:nowrap}
+
+/* 引语卡 */
+.pull{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;
+}
+.pull .quote-card{
+  background:var(--brand);color:#f4ecdb;border-radius:var(--radius);padding:18px 20px;
+  display:flex;flex-direction:column;gap:8px;
+}
+.pull .quote-card p{font-size:15px;margin:0}
+.pull .quote-card cite{font-style:normal;font-size:12.5px;color:#c4d3d9}
+.pull .plain{
+  border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;background:#fffdf8;
+}
+.pull .plain p{font-size:14px;color:var(--ink-soft);margin:0 0 8px}
+
+/* 相关推荐标签区 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rec-tags a{
+  font-size:13.5px;border:1px dashed #cbbfa7;border-radius:999px;padding:6px 14px;
+  color:#5a4a24;background:#fbf7ec;
+}
+.rec-tags a:hover{text-decoration:none;background:var(--accent-soft);border-style:solid}
+
+/* 页脚 */
+.site-foot{background:#243840;color:#d8e2e6;margin-top:10px;padding:40px 0 26px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px}
+.site-foot h3{font-size:14px;letter-spacing:.1em;color:#f0e6d2;margin-bottom:10px}
+.site-foot a{color:#c3d3d9;font-size:13.8px}
+.site-foot a:hover{color:#ffe0a8}
+.site-foot ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.foot-brand{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.foot-brand .brand-name{color:#fff;font-size:17px}
+.foot-brand .brand-sub{color:#93a8b0}
+.foot-desc{font-size:13.5px;color:#a9bcc4;max-width:30ch}
+.foot-meta{border-top:1px solid rgba(255,255,255,.14);margin-top:26px;padding-top:16px;font-size:12.7px;color:#93a8b0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+/* 回顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:18px;z-index:70;
+  width:46px;height:46px;border-radius:50%;border:1px solid #c9bda4;
+  background:var(--brand);color:#fff;font-size:18px;cursor:pointer;display:none;
+  box-shadow:var(--shadow-lg);
+}
+.to-top.show{display:grid;place-items:center}
+.to-top:hover{background:var(--brand-2)}
+
+@media (max-width:1020px){
+  .layout{grid-template-columns:1fr;gap:20px}
+  .side-nav{position:static;order:2}
+  .main-nav{margin-left:0}
+  .reading{grid-template-columns:1fr}
+  .reading-aside{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:16px}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hero-inner{grid-template-columns:1fr;padding:40px 0 34px}
+  .hero-art{order:-1;min-height:0;max-width:520px}
+}
+@media (max-width:720px){
+  .menu-toggle{display:inline-flex}
+  .main-nav{
+    display:none;width:100%;order:5;flex-direction:column;gap:2px;
+    border-top:1px dashed var(--line);padding-top:10px;margin-top:4px;
+  }
+  .main-nav.open{display:flex}
+  .head-tools{margin-left:auto;order:2}
+  .search-box input{width:110px}
+  .grid-3,.grid-2,.pull,.compare{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .panel{padding:18px 16px}
+  .list-tight li{grid-template-columns:1fr auto;gap:4px 10px}
+  .list-tight .date{grid-column:1/-1}
+  .foot-grid{grid-template-columns:1fr}
+  .announce .ann-time{margin-left:0}
+  .reading-main p{text-align:left}
+  .to-top{bottom:14px;right:14px;width:42px;height:42px}
+}
+@media (max-width:380px){
+  .cat-grid{grid-template-columns:1fr}
+  .brand-name{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<!-- 公告条 -->
+<div class="announce" id="announce">
+  <div class="wrap">
+    <span class="tag">45期更新</span>
+    <span>本期新增「楼梯间顶光」与「雨后人行道」两组外拍稿，勘误表补入 10 月 28 日参数记录，索引页同步至 12 个主题。</span>
+    <a href="/#updates">查看本期更新</a>
+    <span class="ann-time">2026-11-08 09:20</span>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="site-head" id="top">
+  <div class="wrap head-inner">
+    <a class="brand" href="/#top" aria-label="印象足拍45期首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <rect width="64" height="64" rx="14" fill="#2f4854"/>
+        <path d="M18 17h28v7H26v6h15v7H26v11h-8z" fill="#e8b04b"/>
+        <circle cx="47" cy="45" r="7" fill="#f3e3c3"/>
+        <path d="M44 45l2.4 2.4L50 42.8" stroke="#2f4854" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">印象足拍45期</span>
+        <span class="brand-sub">FOOTWORK NOTES · 45</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#featured">精选推荐</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#channels">分类入口</a>
+      <a href="/#deep">深度解析</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-box" role="search">
+        <label for="siteSearch" class="small" style="position:absolute;left:-9999px">站内搜索</label>
+        <input id="siteSearch" type="search" placeholder="搜主题 / 器材 / 时段" autocomplete="off">
+        <button type="button" id="searchBtn">查找</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">菜单</button>
+    </div>
+    <p class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></p>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="hero-eyebrow">主题影像征集 · 第 45 辑</span>
+      <h1 id="heroTitle">印象足拍45期</h1>
+      <p class="hero-lead">这一辑把镜头压到膝盖以下：<b>12 组主题设定</b>、<b>37 张成片</b>、<b>6 台机身与 9 支镜头的原始参数</b>，全部来自 10 月 11 日至 11 月 6 日的实地拍摄。地面反光、鞋口褶皱、台阶边界怎么处理，手记里写的是可复述的做法，不是风格形容词。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#deep">读本期深度解析</a>
+        <a class="btn btn-ghost" href="/#guide">看体验指南</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>12</b><span>主题设定</span></div>
+        <div><b>37</b><span>收录成片</span></div>
+        <div><b>6</b><span>机身 / 9 支镜头</span></div>
+        <div><b>4</b><span>城市取景地</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 460 340" role="img" focusable="false">
+        <defs>
+          <linearGradient id="sky45" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e9dfc9"/><stop offset="1" stop-color="#cdbfa3"/>
+          </linearGradient>
+          <linearGradient id="floor45" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3d6472"/><stop offset="1" stop-color="#243840"/>
+          </linearGradient>
+          <linearGradient id="shoe45" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#f4ecdb"/><stop offset="1" stop-color="#cdbb9a"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="460" height="340" rx="18" fill="url(#sky45)"/>
+        <circle cx="352" cy="76" r="40" fill="#f0c979" opacity=".55"/>
+        <rect x="0" y="196" width="460" height="144" fill="url(#floor45)"/>
+        <g opacity=".28" stroke="#f2e8d3" stroke-width="1.4">
+          <path d="M0 232h460M0 262h460M0 292h460"/>
+          <path d="M96 196v144M214 196v144M332 196v144"/>
+        </g>
+        <rect x="34" y="150" width="392" height="46" rx="6" fill="#fff8e9" opacity=".22"/>
+        <g transform="translate(112,214)">
+          <ellipse cx="86" cy="66" rx="76" ry="14" fill="#101d22" opacity=".45"/>
+          <path d="M14 44c8-26 34-42 66-42 26 0 48 10 60 26 8 11 6 22-4 27-9 5-23 6-39 5l-45-2c-16 0-26-3-30-8-3-3-9-4-8-6z" fill="url(#shoe45)"/>
+          <path d="M22 48c18 8 44 10 72 8 20-1 36-4 46-8" stroke="#8f7c58" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M40 30l16 6M48 22l14 6M58 15l12 5" stroke="#a89372" stroke-width="2" stroke-linecap="round"/>
+          <rect x="20" y="50" width="128" height="9" rx="4.5" fill="#2f4854" opacity=".75"/>
+        </g>
+        <g transform="translate(268,246) rotate(-8)">
+          <ellipse cx="60" cy="52" rx="56" ry="12" fill="#101d22" opacity=".4"/>
+          <path d="M4 34c6-20 26-33 52-32 21 0 38 8 47 21 7 9 5 17-3 21-8 4-19 5-31 4l-35-2c-13 0-21-2-24-6-3-3-7-3-6-6z" fill="#f0e2c7"/>
+          <path d="M12 38c14 6 34 8 56 6 16-1 28-3 36-6" stroke="#9a8461" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <rect x="10" y="38" width="100" height="8" rx="4" fill="#3d6472" opacity=".8"/>
+        </g>
+        <g stroke="#2f4854" stroke-width="2" fill="none" opacity=".8">
+          <rect x="292" y="42" width="96" height="64" rx="8" fill="#fffdf8" opacity=".9"/>
+          <circle cx="340" cy="74" r="16"/>
+          <circle cx="340" cy="74" r="7" fill="#c8892b" stroke="none"/>
+          <path d="M292 42l24 26h72l-24-26" opacity=".5"/>
+        </g>
+        <text x="34" y="322" font-family="Noto Sans SC, sans-serif" font-size="13" fill="#d8e2e6" letter-spacing="3">GROUND-LEVEL FRAME · 45</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 主布局 -->
+<div class="wrap layout" id="main">
+  <!-- 常驻侧栏导航 -->
+  <aside class="side-nav" aria-label="栏目导航">
+    <h2>栏目索引</h2>
+    <ul id="sideList">
+      <li><a href="/#overview">领域概览</a></li>
+      <li><a href="/#featured">精选内容推荐</a></li>
+      <li><a href="/#updates">最新更新</a></li>
+      <li><a href="/#channels">分类入口</a></li>
+      <li><a href="/#deep">深度解析</a></li>
+      <li><a href="/#guide">体验指南</a></li>
+      <li><a href="/#compare">器材对照</a></li>
+      <li><a href="/#ranking">本期榜单</a></li>
+      <li><a href="/#faq">常见问题</a></li>
+      <li><a href="/#comments">读者评论</a></li>
+      <li><a href="/#news">相关资讯</a></li>
+      <li><a href="/#recommend">相关推荐</a></li>
+      <li><a href="/#timeline">制作时间线</a></li>
+    </ul>
+    <p class="side-note"><b>更新节奏：</b>每周一、周四补充手记与勘误，单次新增不超过 3 组主题。10 月 28 日勘误已并入对应条目。</p>
+  </aside>
+
+  <main style="min-width:0">
+
+    <!-- 01 领域概览 -->
+    <section class="panel" id="overview" aria-labelledby="h-overview">
+      <h2 id="h-overview"><span class="idx">01</span>领域概览</h2>
+      <p class="lead">足部影像不是单一题材。按拍摄距离、用途与观看方式，常见的四类做法差别很大：地面反光与积水倒影、鞋履细节平铺、行走动态的连拍截帧、以及下肢与地面的构图关系。本辑 45 期把重心放在前两类与第四类。</p>
+      <div class="grid-2">
+        <div>
+          <h3>四类取景，各自解决什么问题</h3>
+          <ul>
+            <li><b>倒影类：</b>用水面、瓷砖、车厢地板压缩空间，主体面积只占画面 1/5 到 1/4，靠反射补足环境信息。</li>
+            <li><b>平铺类：</b>俯拍鞋口、鞋带、袜口与地面接缝，距离 0.6—0.9 米，用于鞋履与材质记录。</li>
+            <li><b>连拍类：</b>快门 1/500 秒以上冻结脚步，剪影与地面纹理并列，适合街拍与运动场景。</li>
+            <li><b>关系类：</b>把脚与门槛、台阶、斑马线并置，讲的是人与空间的分寸。</li>
+          </ul>
+        </div>
+        <div>
+          <h3>本期覆盖范围</h3>
+          <ul>
+            <li>取景城市：南京、苏州、杭州、上海，共 9 处外景、3 处室内。</li>
+            <li>拍摄时段：清晨 6:40—8:10、黄昏 17:20—18:40 占七成，其余为阴天与雨停后半小时。</li>
+            <li>器材：富士 X-T5、索尼 A7C II、理光 GR IIIx 为主，辅以 iPhone 15 Pro 广角端。</li>
+            <li>成片挑选：每主题提交 40—60 张，入选 2—4 张，入选率约 4.6%。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="chip-row" aria-label="本期高频关键词">
+        <a class="chip tag-accent" href="/#deep">足部影像构图</a>
+        <a class="chip" href="/#channels">雨天倒影拍摄</a>
+        <a class="chip" href="/#compare">35mm 与 50mm 选择</a>
+        <a class="chip" href="/#guide">低机位手持稳定</a>
+        <a class="chip" href="/#faq">鞋履平铺布光</a>
+        <a class="chip" href="/#updates">地铁站台顶光</a>
+      </div>
+    </section>
+
+    <!-- 02 精选内容推荐 -->
+    <section class="panel" id="featured" aria-labelledby="h-featured">
+      <h2 id="h-featured"><span class="idx">02</span>精选内容推荐</h2>
+      <p class="lead">从本期 12 组主题里挑出四组，挑选标准是「换个人按手记能重做一遍」，而不是画面好看程度。</p>
+      <div class="grid-2">
+        <article class="card">
+          <img src="https://picsum.photos/seed/foot45-stair/640/400" width="640" height="400" loading="lazy" alt="楼梯间顶光下的扶手阴影与鞋底边缘">
+          <div class="card-body">
+            <h3>楼梯间顶光：扶手阴影压在鞋口上</h3>
+            <p>南京一处老居民楼，二楼平台。顶灯 4000K，扶手在鞋面切出 3 厘米宽的暗带。参数：35mm、f/2.8、1/60 秒、ISO 800。</p>
+            <div class="card-meta"><span>10-26</span><span>陈屿</span><span>3 张入选</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/foot45-rain/640/400" width="640" height="400" loading="lazy" alt="雨后人行道砖面积水映出鞋头的倒影">
+          <div class="card-body">
+            <h3>雨后人行道：积水倒影的 4 个角度</h3>
+            <p>苏州平江路外侧人行道，雨停 20 分钟。水面高 6 毫米，机位压到离地 12 厘米，倒影完整度取决于砖缝方向。</p>
+            <div class="card-meta"><span>10-31</span><span>沈迟</span><span>4 张入选</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/foot45-tile/640/400" width="640" height="400" loading="lazy" alt="地铁站台灰色瓷砖地面上的鞋与黄色安全线">
+          <div class="card-body">
+            <h3>站台黄线：用安全线做水平分割</h3>
+            <p>上海 10 号线站台，黄色警戒线与瓷砖缝形成双水平线。广角端 24mm 拍，边角畸变被地面缝线压住。</p>
+            <div class="card-meta"><span>11-02</span><span>周未</span><span>2 张入选</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/foot45-flatlay/640/400" width="640" height="400" loading="lazy" alt="木地板上平铺的布鞋、白袜与卷边裤脚">
+          <div class="card-body">
+            <h3>木地板平铺：布鞋与裤脚的三种摆法</h3>
+            <p>室内侧逆光，窗宽 1.2 米。俯拍 90 度，距离 0.75 米，用白卡在右侧补 1/3 档，避免裤脚压暗成一团。</p>
+            <div class="card-meta"><span>11-04</span><span>林岸</span><span>5 张入选</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 最新更新 -->
+    <section class="panel" id="updates" aria-labelledby="h-updates">
+      <h2 id="h-updates"><span class="idx">03</span>最新更新</h2>
+      <p class="lead">近三周内入库、勘误与补拍记录，时间截至 2026-11-08。</p>
+      <ul class="list-tight">
+        <li><span class="date">11-07</span><span class="hl">补拍「雨后人行道」第 4 组，替换 10-31 过曝版本</span><span class="meta">沈迟 · 修订</span></li>
+        <li><span class="date">11-06</span><span class="hl">新增「清晨菜场门口」题材，石板路湿滑反光</span><span class="meta">陈屿 · 2 张</span></li>
+        <li><span class="date">11-04</span><span class="hl">木地板平铺稿配布光示意，标注白卡距离</span><span class="meta">林岸 · 补图</span></li>
+        <li><span class="date">11-02</span><span class="hl">站台黄线稿补入 24mm 边角畸变说明</span><span class="meta">周未 · 文字</span></li>
+        <li><span class="date">10-30</span><span class="hl">器材对照表增补 GR IIIx 28mm 等效视角实测</span><span class="meta">编辑组 · 数据</span></li>
+        <li><span class="date">10-28</span><span class="hl">勘误：10-22 稿快门标为 1/320，实为 1/250</span><span class="meta">勘误 · 已改</span></li>
+        <li><span class="date">10-24</span><span class="hl">「楼梯间顶光」增补扶手高度与暗带宽度</span><span class="meta">陈屿 · 修订</span></li>
+        <li><span class="date">10-19</span><span class="hl">首轮主题征集结束，收到 11 位拍摄者提交</span><span class="meta">编辑组 · 记录</span></li>
+      </ul>
+      <p class="small">勘误说明：口径以原始 EXIF 与拍摄者笔记交叉核对为准，无法核实的参数直接删除，不做估算保留。</p>
+    </section>
+
+    <!-- 04 分类入口 -->
+    <section class="panel" id="channels" aria-labelledby="h-channels">
+      <h2 id="h-channels"><span class="idx">04</span>分类入口</h2>
+      <p class="lead">按取景条件与器材两个维度分流，共 10 个入口。每条入口标注了本期对应的主题数量。</p>
+      <div class="cat-grid">
+        <a class="cat" href="/#featured"><b>雨天倒影拍摄</b><span>3 组 · 积水与瓷砖</span></a>
+        <a class="cat" href="/#featured"><b>楼梯间顶光</b><span>2 组 · 暗带与扶手</span></a>
+        <a class="cat" href="/#featured"><b>地铁站台地面</b><span>2 组 · 黄线与砖缝</span></a>
+        <a class="cat" href="/#featured"><b>鞋履平铺布光</b><span>3 组 · 窗光与白卡</span></a>
+        <a class="cat" href="/#guide"><b>低机位手持稳定</b><span>技巧 · 5 条</span></a>
+        <a class="cat" href="/#deep"><b>足部影像构图</b><span>解析 · 4 节</span></a>
+        <a class="cat" href="/#compare"><b>35mm 与 50mm 选择</b><span>对照 · 实测</span></a>
+        <a class="cat" href="/#compare"><b>理光 GR IIIx 街拍</b><span>器材 · 28mm</span></a>
+        <a class="cat" href="/#ranking"><b>本期入选率榜</b><span>12 组排序</span></a>
+        <a class="cat" href="/#guide"><b>裤脚与袜口处理</b><span>细节 · 4 类</span></a>
+      </div>
+    </section>
+
+    <!-- 05 深度解析 -->
+    <section class="panel" id="deep" aria-labelledby="h-deep">
+      <h2 id="h-deep"><span class="idx">05</span>深度解析</h2>
+      <p class="lead">本辑唯一的主体阅读区。下面三个判断都可以被反驳，依据是本期 37 张成片的参数记录与 4 次现场复拍。</p>
+      <div class="reading">
+        <div class="reading-main">
+          <h3>判断一：地面反光不是越平越好，6 毫米水深是分界</h3>
+          <p>10 月 31 日平江路外侧人行道，雨停 18 分钟后我们测了 5 处积水，水深从 2 毫米到 14 毫米。2—5 毫米时倒影只剩轮廓，鞋面颜色与砖缝纹理还在；6—9 毫米时倒影完整，但鞋带细节被吞掉；超过 12 毫米，水面开始出现风纹，倒影断裂。当天入选的 4 张全部落在 6—9 毫米区间，参数是 f/4、1/250 秒、ISO 320。</p>
+          <p>可以反驳的地方在于：如果拍摄目的是记录鞋款而不是画面氛围，8 毫米水深反而会丢掉鞋头缝线。10 月 31 日我们放弃了两张倒影更漂亮的片子，原因就是鞋带看不清。这个取舍在 11 月 7 日补拍时又验证了一次。</p>
+
+          <div class="verify">
+            <h4>可核对的判断拆解</h4>
+            <ul>
+              <li>样本：10-31 与 11-07 两次拍摄，共 5 个积水点、63 张原始文件。</li>
+              <li>测量：钢尺贴地量水深，误差 ±1 毫米。</li>
+              <li>结论依据：入选 4 张水深 6—9 毫米；剔除 2 张水深 11—13 毫米。</li>
+              <li>可反驳条件：若更换 90mm 长焦压缩倒影，分界区间会上移。</li>
+            </ul>
+          </div>
+
+          <h3>判断二：楼梯间顶光的关键是暗带宽度，不是亮度</h3>
+          <p>10 月 26 日南京老居民楼，二楼平台顶灯是 4000K、显色指数约 82 的吸顶灯。扶手宽 5 厘米，离地 92 厘米，在鞋面上切出 3 厘米左右的横向暗带。当天试了 5 个站位：站在暗带正中，鞋面被切成两半，画面重心散；后退半步，暗带压到鞋口，鞋头完整、鞋口有阴影，是最后入选 3 张的位置。</p>
+          <p>亮度反而不是问题。那盏灯照度不高，手机测光在 ISO 800 下仍能到 1/60 秒，真正决定画面成败的是暗带落点。10 月 24 日的修订把「扶手高度 92 厘米」写进手记，就是为了让换个人也能复现这个落点。</p>
+
+          <h3>判断三：平铺题材用 35mm 比 50mm 更容易控住透视</h3>
+          <p>11 月 4 日室内木地板平铺，窗宽 1.2 米。同一摆位分别用 35mm 与 50mm 俯拍：35mm 在 0.75 米距离能收进整只鞋加 15 厘米裤脚，边缘透视变形靠俯拍 90 度压住；50mm 要退到 1.05 米，裤脚被裁掉一截，且窗光衰减让画面右侧暗了约 1/3 档。入选的 5 张全部是 35mm。</p>
+          <blockquote>「平铺不是越正越好。俯拍 90 度是基准，但往窗边偏 5 度，鞋口阴影会自然一点，这个偏移量比换镜头有用。」<cite>—— 林岸，11-04 拍摄笔记第 2 页</cite></blockquote>
+
+          <h3>判断四：连拍截帧的可用率被高估了</h3>
+          <p>10 月 19 日到 11 月 2 日共做 6 次行走连拍，快门 1/500—1/1000 秒，每次 60—80 张。真正可用的只有 7 张，可用率不到 2%。原因不是糊片，而是落脚瞬间的脚踝角度大多雷同，剪影重复。10 月 28 日勘误里那条快门数值修正，就来自其中一次连拍的 EXIF 复核。</p>
+        </div>
+        <aside class="reading-aside" aria-label="解析补充说明">
+          <h4>参数口径</h4>
+          <p>所有快门、光圈、ISO 以机身原始 EXIF 为准；手机拍摄标注镜头等效焦距与数码变焦倍数。</p>
+          <h4>剔除规则</h4>
+          <p>鞋面高光溢出、地面纹理不可辨、画面出现可识别人脸，三者任一即剔除，不进入入选池。</p>
+          <h4>复拍记录</h4>
+          <p>10-31 与 11-07 两次复拍间隔 7 天，天气分别为雨停后与阴天，用于交叉验证水深区间。</p>
+          <h4>待验证</h4>
+          <p>90mm 长焦下的倒影分界区间尚无实测数据，11 月中旬补。</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 06 体验指南 -->
+    <section class="panel" id="guide" aria-labelledby="h-guide">
+      <h2 id="h-guide"><span class="idx">06</span>体验指南</h2>
+      <p class="lead">给第一次拍这个题材的人。按顺序做完这 5 步，至少不会在机位和光线上反复试错。</p>
+      <ol class="steps">
+        <li><b>先定用途，再定距离</b><p>记录鞋款走 0.6—0.9 米平铺；记录空间关系走 1.5—3 米低机位。两个用途的构图逻辑不同，混着拍会两头不靠。</p></li>
+        <li><b>把机位压到离地 12—20 厘米</b><p>手持时肘部贴膝盖内侧，呼吸两次按一次快门。11 月 2 日站台那组用这个姿势，1/60 秒下 20 张里 16 张可用。</p></li>
+        <li><b>找一条地面基准线</b><p>砖缝、黄线、门槛都行。基准线决定画面水平，比后期旋转更省事。10 月 31 日的积水稿就是靠砖缝对齐。</p></li>
+        <li><b>处理裤脚与袜口</b><p>裤脚卷两折、袜口露出 1—2 厘米最稳；裤脚堆在鞋面会遮住鞋型，袜口过高会切断脚踝线条。</p></li>
+        <li><b>拍摄后当场筛一遍</b><p>按「纹理可辨、高光不溢、无路人面部」三条剔除。当天筛掉比回去再看效率高一倍，本辑 4.6% 的入选率就是这么来的。</p></li>
+      </ol>
+      <h3>三个容易踩的坑</h3>
+      <div class="grid-3">
+        <div class="card"><div class="card-body"><h4>广角贴着地面拍</h4><p>24mm 离地 5 厘米，边角会被拉出弧形，砖缝变弯。除非刻意要这个效果，否则退到 12 厘米以上。</p></div></div>
+        <div class="card"><div class="card-body"><h4>雨天不打伞拍</h4><p>镜头前组沾水珠，画面出现软斑，回去才发现。雨停后 20 分钟内拍完最稳。</p></div></div>
+        <div class="card"><div class="card-body"><h4>顶光下开高感</h4><p>ISO 拉到 3200 后鞋面材质颗粒被噪点吃掉，10-26 那组最终只保留了 ISO 800 的片子。</p></div></div>
+      </div>
+    </section>
+
+    <!-- 07 器材对照 -->
+    <section class="panel" id="compare" aria-labelledby="h-compare">
+      <h2 id="h-compare"><span class="idx">07</span>器材对照</h2>
+      <p class="lead">同一场景、不同机身与焦段的实测差异。数据来自 10 月 30 日至 11 月 4 日的 4 次对照拍摄。</p>
+      <div class="compare">
+        <div class="col-a">
+          <h4>35mm 等效视角（X-T5 + 23mm f/2）</h4>
+          <ul>
+            <li>平铺距离 0.75 米可收整鞋加裤脚，透视可控。</li>
+            <li>雨天倒影边缘变形较轻，砖缝保持直线。</li>
+            <li>低机位手持重心偏前，建议开启机身防抖。</li>
+            <li>本期入选 14 张，占 37 张的 37.8%。</li>
+          </ul>
+        </div>
+        <div class="col-b">
+          <h4>28mm 等效视角（GR IIIx）</h4>
+          <ul>
+            <li>口袋机，抬手即拍，适合站台与街面快速取景。</li>
+            <li>平铺需退到 0.95 米，画面边缘裤脚易被裁。</li>
+            <li>近摄最近 0.2 米，鞋头特写够用，但暗角明显。</li>
+            <li>本期入选 9 张，其中 6 张为街面动态。</li>
+          </ul>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">补充：50mm 等效在平铺题材中入选 4 张，主要问题是退距不足导致裤脚裁切；90mm 长焦本期仅 2 张，用于压缩站台纵深。</p>
+    </section>
+
+    <!-- 08 本期榜单 -->
+    <section class="panel" id="ranking" aria-labelledby="h-ranking">
+      <h2 id="h-ranking"><span class="idx">08</span>本期榜单</h2>
+      <p class="lead">按「入选张数 / 提交张数」排序，提交量低于 30 张的主题不参与排名，避免样本太小失真。</p>
+      <ol class="rank">
+        <li><div><b>雨后人行道：积水倒影</b><span class="why">提交 52 张，入选 4 张，砖缝对齐率高</span></div><span class="score">7.7%</span></li>
+        <li><div><b>木地板平铺：布鞋与裤脚</b><span class="why">提交 58 张，入选 5 张，窗光稳定</span></div><span class="score">8.6%</span></li>
+        <li><div><b>地铁站台黄线</b><span class="why">提交 41 张，入选 2 张，人流干扰大</span></div><span class="score">4.9%</span></li>
+        <li><div><b>楼梯间顶光</b><span class="why">提交 46 张，入选 3 张，暗带落点难控</span></div><span class="score">6.5%</span></li>
+        <li><div><b>清晨菜场石板路</b><span class="why">提交 34 张，入选 2 张，湿滑反光不稳定</span></div><span class="score">5.9%</span></li>
+        <li><div><b>行走连拍截帧</b><span class="why">提交 78 张，入选 7 张，重复率高</span></div><span class="score">9.0%</span></li>
+      </ol>
+    </section>
+
+    <!-- 09 FAQ -->
+    <section class="panel" id="faq" aria-labelledby="h-faq">
+      <h2 id="h-faq"><span class="idx">09</span>常见问题</h2>
+      <p class="lead">拍摄者提交时反复问到的 6 个问题，答案只写本期实测能支撑的部分。</p>
+      <details>
+        <summary>雨天倒影拍摄要等多长时间水才够深？</summary>
+        <div class="ans">中雨停后 15—25 分钟，人行道砖面积水通常到 6—9 毫米。10 月 31 日平江路实测：停雨 18 分钟水深 7 毫米，是最理想的区间。雨停超过 40 分钟，砖缝开始吸水，倒影变碎。</div>
+      </details>
+      <details>
+        <summary>低机位手持稳定有没有不靠三脚架的办法？</summary>
+        <div class="ans">有。肘部贴住膝盖内侧形成三角支撑，快门不低于 1/60 秒；11 月 2 日站台那组这样拍，1/60 秒下 20 张里 16 张可用。再低就建议把相机包垫在地上当支点。</div>
+      </details>
+      <details>
+        <summary>鞋履平铺布光白卡放哪一侧？</summary>
+        <div class="ans">放在窗口对侧、距离主体 40—50 厘米的位置。11 月 4 日木地板那组白卡在右侧，补了约 1/3 档，裤脚阴影从死黑变为可辨纹理。白卡贴太近会过亮，鞋面高光溢出。</div>
+      </details>
+      <details>
+        <summary>35mm 与 50mm 选哪个更适合站台取景？</summary>
+        <div class="ans">35mm。站台纵深有限，50mm 退距不够，黄线与鞋的关系压不进去。11 月 2 日那组用 24mm 广角端拍，靠地面砖缝压住边角畸变，入选 2 张。</div>
+      </details>
+      <details>
+        <summary>裤脚怎么处理才不抢鞋型？</summary>
+        <div class="ans">卷两折、露出脚踝 2—3 厘米最稳。裤脚堆在鞋面上会遮住鞋头线条；裤脚过短则切断脚踝与地面的关系。10 月 26 日楼梯间那组试了三种卷法，两折版入选。</div>
+      </details>
+      <details>
+        <summary>拍摄时遇到路人经过怎么处理？</summary>
+        <div class="ans">等，或者换一侧。11 月 2 日站台那组因为人流密集，最终只保留了 2 张；画面出现可识别人脸的片子直接剔除，不进入入选池。</div>
+      </details>
+    </section>
+
+    <!-- 10 读者评论 -->
+    <section class="panel" id="comments" aria-labelledby="h-comments">
+      <h2 id="h-comments"><span class="idx">10</span>读者评论</h2>
+      <p class="lead">来自拍摄者与读者的 6 条反馈，包含不同意见，按提交时间排列。</p>
+      <div class="comments">
+        <article class="comment">
+          <header><span class="who">阿岩</span><span class="when">11-07 21:14</span><span class="tone">认可</span></header>
+          <p>雨后人行道那组的 6—9 毫米水深说法，我 11 月 6 日在无锡也复现了，砖缝方向确实决定倒影完整度，这个细节以前没人写。</p>
+        </article>
+        <article class="comment">
+          <header><span class="who">木子禾</span><span class="when">11-06 10:02</span><span class="tone mid">中性</span></header>
+          <p>木地板平铺那组白卡放右侧补 1/3 档，我试了，效果一般。我的窗光更斜，白卡要往前挪 10 厘米才不压暗鞋口。参数还是得按房间调。</p>
+        </article>
+        <article class="comment">
+          <header><span class="who">老周拍地面</span><span class="when">11-05 16:40</span><span class="tone crit">吐槽</span></header>
+          <p>连拍截帧那节说得太保守。78 张里选 7 张，我按同样方法拍了 90 张只挑出 3 张，脚踝角度雷同这个问题比写的严重。可用率不到 2% 才是真实数字。</p>
+        </article>
+        <article class="comment">
+          <header><span class="who">沈迟</span><span class="when">11-04 22:31</span><span class="tone">作者回应</span></header>
+          <p>老周说的对，连拍可用率我写的是整体数据，个人样本波动更大。11 月中旬补拍会把单次可用率单独列出来，不再合并计算。</p>
+        </article>
+        <article class="comment">
+          <header><span class="who">Lin_岸</span><span class="when">11-03 08:55</span><span class="tone">认可</span></header>
+          <p>楼梯间暗带 3 厘米这个落点，我照着在自家楼道试了，扶手高 92 厘米那栋确实能复现，换一栋 88 厘米的就偏了，写高度是有用的。</p>
+        </article>
+        <article class="comment">
+          <header><span class="who">小满</span><span class="when">11-01 19:20</span><span class="tone mid">中性</span></header>
+          <p>榜单里「行走连拍截帧」入选率 9.0% 排第一，但提交量 78 张也最大，这个排序只看比例的话意义有限，建议再加一列绝对入选数。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 11 相关资讯 -->
+    <section class="panel" id="news" aria-labelledby="h-news">
+      <h2 id="h-news"><span class="idx">11</span>相关资讯</h2>
+      <p class="lead">与本期主题相关的动态，含一处参数勘误与一处待确认说法。</p>
+      <ul class="list-tight">
+        <li><span class="date">11-06</span><span><b class="hl">清晨菜场题材入库</b>：石板路湿滑，机位离地 15 厘米，拍 32 张选 2 张。拍摄者陈屿，取景地南京科巷。</span><span class="meta">事实</span></li>
+        <li><span class="date">11-02</span><span><b class="hl">站台黄线稿参数复核</b>：24mm 广角端边角畸变明显，入选 2 张均为画面中心构图，边缘裁切后使用。</span><span class="meta">事实</span></li>
+        <li><span class="date">10-30</span><span><b class="hl">GR IIIx 视角实测公布</b>：28mm 等效，平铺退距 0.95 米，近摄最近 0.2 米，暗角在 f/2.8 下可辨。</span><span class="meta">数据</span></li>
+        <li><span class="date">10-28</span><span><b class="hl">勘误</b>：10-22 稿快门标 1/320 秒，经 EXIF 复核实为 1/250 秒，已改，不影响该组入选结果。</span><span class="meta">更正</span></li>
+        <li><span class="date">10-24</span><span><b class="hl">待确认说法</b>：有拍摄者称顶灯显色指数低于 80 时鞋面偏绿，本期仅 1 台手机测得 82，样本不足，暂不写入手记。</span><span class="meta">推测 · 待核</span></li>
+      </ul>
+    </section>
+
+    <!-- 12 相关推荐 -->
+    <section class="panel" id="recommend" aria-labelledby="h-recommend">
+      <h2 id="h-recommend"><span class="idx">12</span>相关推荐</h2>
+      <p class="lead">按本期出现频率与可复用程度列出的检索词，点击回到对应栏目。</p>
+      <div class="rec-tags">
+        <a href="/#featured">雨天倒影拍摄</a>
+        <a href="/#featured">楼梯间顶光</a>
+        <a href="/#featured">地铁站台地面</a>
+        <a href="/#featured">鞋履平铺布光</a>
+        <a href="/#deep">足部影像构图</a>
+        <a href="/#guide">低机位手持稳定</a>
+        <a href="/#guide">裤脚与袜口处理</a>
+        <a href="/#compare">35mm 与 50mm 选择</a>
+        <a href="/#compare">理光 GR IIIx 街拍</a>
+        <a href="/#deep">积水水深与倒影</a>
+        <a href="/#guide">砖缝对齐画面水平</a>
+        <a href="/#ranking">行走连拍截帧</a>
+        <a href="/#guide">白卡补光距离</a>
+        <a href="/#deep">暗带宽度实测</a>
+      </div>
+    </section>
+
+    <!-- 13 制作时间线 -->
+    <section class="panel" id="timeline" aria-labelledby="h-timeline">
+      <h2 id="h-timeline"><span class="idx">13</span>制作时间线</h2>
+      <p class="lead">45 期从征集到发布的关键节点，包含一次筛选标准调整。</p>
+      <ul class="timeline">
+        <li><span>10-19</span><b>主题征集结束</b><p>收到 11 位拍摄者提交，主题 19 组，其中 7 组因重复或参数缺失未进入初选。</p></li>
+        <li><span>10-24</span><b>筛选标准调整</b><p>原定「高光不溢」一条改为「鞋面高光不溢」，避免地面反光被误剔除，楼梯间那组因此保留 1 张。</p></li>
+        <li><span>10-28</span><b>首轮参数复核</b><p>发现 1 处快门数值误差并改正；GR IIIx 视角实测数据入库。</p></li>
+        <li><span>10-31</span><b>雨景集中拍摄</b><p>平江路外侧人行道，5 个积水点、63 张原始文件，为水深区间判断提供主样本。</p></li>
+        <li><span>11-04</span><b>室内平铺补拍</b><p>木地板布光示意完成，白卡距离与俯拍角度写入指南。</p></li>
+        <li><span>11-07</span><b>倒影复拍与替换</b><p>补拍第 4 组替换 10-31 过曝版本，倒影分界区间再次验证。</p></li>
+        <li><span>11-08</span><b>发布 45 期</b><p>12 组主题、37 张成片、勘误表同步上线。</p></li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<!-- 页脚 -->
+<footer class="site-foot" id="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#e8b04b"/>
+            <path d="M18 17h28v7H26v6h15v7H26v11h-8z" fill="#2f4854"/>
+            <circle cx="47" cy="45" r="7" fill="#fffdf8"/>
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">印象足拍45期</span>
+            <span class="brand-sub">FOOTWORK NOTES · 45</span>
+          </span>
+        </div>
+        <p class="foot-desc">把镜头压到地面，记录鞋履、脚步与城市接缝之间的关系。手记以可复现的参数与剔除标准为主。</p>
+      </div>
+      <div>
+        <h3>主题栏目</h3>
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#featured">精选内容推荐</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>实用入口</h3>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#compare">器材对照</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>参与与记录</h3>
+        <ul>
+          <li><a href="/#ranking">本期榜单</a></li>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#timeline">制作时间线</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-meta">
+      <span>示例数据说明：本期条目、人物与参数均为主题示例，用于展示拍摄手记的组织方式；发布日期以 2026-11-08 为基准。</span>
+      <span>更新时间 2026-11-08 · 对应「最新更新」与「制作时间线」可核对</span>
+    </div>
+    <div class="foot-meta" style="margin-top:10px;border-top:0;padding-top:0">
+      <span>© 2026 印象足拍45期 图文资料保留权利</span>
+      <span>本页不含外部广告与追踪脚本</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+  var menuToggle = document.getElementById('menuToggle');
+  var mainNav = document.getElementById('mainNav');
+  var searchBtn = document.getElementById('searchBtn');
+  var searchInput = document.getElementById('siteSearch');
+  var feedback = document.getElementById('searchFeedback');
+  var toTop = document.getElementById('toTop');
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideList a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  /* 菜单收起 */
+  if(menuToggle && mainNav){
+    menuToggle.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mainNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 本地搜索 */
+  var index = [
+    {t:'雨天倒影拍摄 积水水深区间', id:'featured'},
+    {t:'楼梯间顶光 扶手暗带宽度', id:'featured'},
+    {t:'地铁站台地面 黄线构图', id:'featured'},
+    {t:'鞋履平铺布光 白卡位置', id:'featured'},
+    {t:'足部影像构图 四类取景', id:'overview'},
+    {t:'低机位手持稳定 1/60秒', id:'guide'},
+    {t:'裤脚与袜口处理', id:'guide'},
+    {t:'35mm 与 50mm 选择 对照', id:'compare'},
+    {t:'理光 GR IIIx 28mm 街拍', id:'compare'},
+    {t:'行走连拍截帧 可用率', id:'ranking'},
+    {t:'积水水深与倒影分界', id:'deep'},
+    {t:'暗带宽度实测 92厘米', id:'deep'},
+    {t:'勘误 快门 1/250', id:'news'},
+    {t:'制作时间线 筛选标准', id:'timeline'}
+  ];
+  function doSearch(){
+    var q = (searchInput.value || '').trim().toLowerCase();
+    if(!q){
+      feedback.textContent = '请输入主题、器材或时段，例如「积水」「GR IIIx」。';
+      feedback.classList.add('show');
+      return;
+    }
+    var hit = index.filter(function(item){
+      return item.t.toLowerCase().indexOf(q) !== -1;
+    });
+    if(hit.length === 0){
+      feedback.textContent = '没有找到与「' + searchInput.value.trim() + '」匹配的条目，可试试「倒影」「平铺」「连拍」。';
+      feedback.classList.add('show');
+      return;
+    }
+    feedback.textContent = '找到 ' + hit.length + ' 条，正在跳到「' + hit[0].t + '」。';
+    feedback.classList.add('show');
+    var target = document.getElementById(hit[0].id);
+    if(target){
+      var top = target.getBoundingClientRect().top + window.pageYOffset - 108;
+      window.scrollTo({top: top, behavior: 'smooth'});
+    }
+  }
+  if(searchBtn){
+    searchBtn.addEventListener('click', doSearch);
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+  }
+
+  /* 滚动高亮 */
+  function highlight(){
+    var pos = window.pageYOffset + 140;
+    var current = null;
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= pos) current = sec.id;
+    });
+    sideLinks.forEach(function(a){
+      var id = a.getAttribute('href').split('#')[1];
+      a.classList.toggle('is-active', id === current);
+    });
+  }
+
+  /* 回顶部 */
+  function toggleTop(){
+    if(window.pageYOffset > 420){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      window.requestAnimationFrame(function(){
+        highlight();
+        toggleTop();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, {passive:true});
+  highlight();
+  toggleTop();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "印象足拍45期",
+  "description": "印象足拍45期主题影像专题，收录足部与地面取景的拍摄手记、参数记录、器材对照与读者反馈。",
+  "inLanguage": "zh-CN",
+  "about": "足部影像拍摄"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "雨天倒影拍摄要等多长时间水才够深？",
+      "acceptedAnswer": {"@type": "Answer", "text": "中雨停后15—25分钟，人行道砖面积水通常到6—9毫米。10月31日平江路实测停雨18分钟水深7毫米，是最理想的区间。"}
+    },
+    {
+      "@type": "Question",
+      "name": "低机位手持稳定有没有不靠三脚架的办法？",
+      "acceptedAnswer": {"@type": "Answer", "text": "肘部贴住膝盖内侧形成三角支撑，快门不低于1/60秒；11月2日站台那组1/60秒下20张里16张可用。"}
+    },
+    {
+      "@type": "Question",
+      "name": "鞋履平铺布光白卡放哪一侧？",
+      "acceptedAnswer": {"@type": "Answer", "text": "放在窗口对侧、距离主体40—50厘米的位置。11月4日木地板那组白卡在右侧补了约1/3档。"}
+    },
+    {
+      "@type": "Question",
+      "name": "35mm与50mm选哪个更适合站台取景？",
+      "acceptedAnswer": {"@type": "Answer", "text": "选35mm。站台纵深有限，50mm退距不够，黄线与鞋的关系压不进去。"}
+    },
+    {
+      "@type": "Question",
+      "name": "裤脚怎么处理才不抢鞋型？",
+      "acceptedAnswer": {"@type": "Answer", "text": "卷两折、露出脚踝2—3厘米最稳。裤脚堆在鞋面上会遮住鞋头线条。"}
+    },
+    {
+      "@type": "Question",
+      "name": "拍摄时遇到路人经过怎么处理？",
+      "acceptedAnswer": {"@type": "Answer", "text": "等或者换一侧。画面出现可识别人脸的片子直接剔除，不进入入选池。"}
+    }
+  ]
+}
+</script>
+</body>
+      </html>
